@@ -24,7 +24,6 @@ endsnippet
 # -------------------- sec
 snippet sec "\section" bA
 \\section{$1}
-\\label{sec:$1}
 
 $0
 endsnippet
@@ -32,7 +31,6 @@ endsnippet
 # -------------------- subsec
 snippet subsec "\subsection" bA
 \\subsection{$1}
-\\label{subsec:$1}
 
 $0
 endsnippet
@@ -44,6 +42,10 @@ snippet begin "\begin \end" bA
 \\end{$1}
 endsnippet
 
+# -------------------- center
+snippet center "\centering" i
+\\centering$0
+endsnippet
 
 
 # ---------------------------------------
@@ -56,6 +58,8 @@ snippet img "\figure with img" bA
 	\\centering
 	\\includegraphics[width = $1cm]{img/$2}
 	\\label{fig:$2}
+\\end{figure}
+$0
 endsnippet
 
 # -------------------- tikz
@@ -100,8 +104,8 @@ endsnippet
 # ---------------------------------------
 
 # -------------------- inline
-snippet im "inline math" wA
-$${1}$$0
+snippet mm "inline math" wA
+$${1}$ $0
 endsnippet
 
 # -------------------- gather
@@ -120,7 +124,7 @@ endsnippet
 
 # -------------------- frac
 snippet frac "\frac" iA
-\\frac{$1}{$2}$0
+\\frac{$1}{$2} $0
 endsnippet
 
 # -------------------- parentheses
@@ -133,14 +137,25 @@ snippet brace "\braces" iA
 \\braces{$1}$0
 endsnippet
 
+# -------------------- brackets
+snippet bracket "\brackets" iA
+\\brackets{$1}$0
+endsnippet
+
+
 # -------------------- si
 snippet si "\si" w
-\\SI{$1}{$2}$0
+\\SI{$1}{$2} $0
 endsnippet
 
 # -------------------- ce
 snippet ce "\ce" w
-\\ce{$1}$0
+\\ce{$1} $0
+endsnippet
+
+# -------------------- binom
+snippet binom "\binom" iw
+\\binom{$1}{$2}$0
 endsnippet
 
 
@@ -157,15 +172,33 @@ snippet itemize "itemize" bA
 endsnippet
 
 # -------------------- enumerate
-snippet enumerate "enumerate" bA
-\\begin{enumerate}
+snippet enum "enumerate" bA
+\\begin{enumerate}[$1]
 	\\item $0
 \\end{enumerate}
 endsnippet
 
 # -------------------- item
-snippet item "\item" 
+snippet item "\item" b
 \\item $0
+endsnippet
+
+# -------------------- item
+snippet ii "\item" bA
+\\item $0
+endsnippet
+
+
+
+# ---------------------------------------
+# Tables, columns, and rows
+# ---------------------------------------
+
+# -------------------- multicols
+snippet multicols "multicols" bA
+\\begin{multicols}{$1}
+	$0
+\\end{multicols}
 endsnippet
 
 
