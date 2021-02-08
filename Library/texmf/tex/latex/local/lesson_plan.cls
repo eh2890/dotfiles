@@ -8,6 +8,7 @@
 \usepackage{cancel}
 \usepackage[justification=centering]{caption}
 \usepackage{chemfig}
+\usepackage{circuitikz}
 \usepackage{color}
 \usepackage[autostyle]{csquotes}
 \usepackage{empheq}
@@ -16,17 +17,20 @@
 \usepackage{float}
 \usepackage{framed}
 \usepackage{listings}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1.5in]{geometry}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{mathrsfs}
 \usepackage[metapost]{mfpic}
-\usepackage{mhchem}
+\usepackage[version=4]{mhchem}
+\usepackage{modiagram}
 \usepackage{multicol}
 \usepackage{multirow}
 \usepackage{setspace}
 \usepackage[binary-units]{siunitx}
 \usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{proof}
 
 
 % Page settings
@@ -43,6 +47,8 @@
 % New commands
 \newcommand{\diff}{\mathop{}\!d}
 \newcommand{\parentheses}[1]{{\left(#1\right)}}
+\newcommand{\braces}[1]{{\left\{#1\right\}}}
+\newcommand{\brackets}[1]{\left[#1\right]}
 \newcommand{\fdiff}[2]{\frac{\diff #1}{\diff #2}}
 \newcommand{\fpartial}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
@@ -51,6 +57,11 @@
 \newcommand{\inv}{^{-1}}
 \newcommand*\widefbox[1]{\fbox{\hspace{2em}#1\hspace{2em}}}
 \newcommand{\independent}{\mathrel{\text{\scalebox{1.07}{$\perp\mkern-10mu\perp$}}}}
+
+
+% Renew commands
+\renewcommand{\mod}[1]{\ \mathrm{mod}\ #1}
+\renewcommand{\gcd}[2]{\mathrm{gcd}(#1, #2)}
 
 
 % Si Units settings
