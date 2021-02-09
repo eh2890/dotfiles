@@ -111,20 +111,22 @@ endsnippet
 # -------------------- gather
 snippet gather "gather*" bA
 \\begin{gather*}
-	$0
+	$1
 \\end{gather*}
+$0
 endsnippet
 
 # -------------------- align
 snippet align "align*" bA
 \\begin{align*}
-	$0
+	$1
 \\end{align*}
+$0
 endsnippet
 
 # -------------------- frac
 snippet frac "\frac" iA
-\\frac{$1}{$2} $0
+\\frac{$1}{$2}$0
 endsnippet
 
 # -------------------- parentheses
@@ -145,18 +147,24 @@ endsnippet
 
 # -------------------- si
 snippet si "\si" w
-\\SI{$1}{$2} $0
+\\SI{$1}{$2}$0
 endsnippet
 
 # -------------------- ce
 snippet ce "\ce" w
-\\ce{$1} $0
+\\ce{$1}$0
 endsnippet
 
 # -------------------- binom
 snippet binom "\binom" iw
 \\binom{$1}{$2}$0
 endsnippet
+
+# -------------------- sqrt
+snippet sqrt "\sqrt" iA
+\\sqrt{$1}$0
+endsnippet
+
 
 
 
