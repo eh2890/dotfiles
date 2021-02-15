@@ -22,7 +22,7 @@
 \usepackage{hyperref}
 \usepackage{mathrsfs}
 \usepackage[metapost]{mfpic}
-\usepackage[version=4]{mhchem}
+\usepackage{mhchem}
 \usepackage{modiagram}
 \usepackage{multicol}
 \usepackage{multirow}

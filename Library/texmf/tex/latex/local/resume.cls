@@ -13,6 +13,7 @@
 \usepackage{enumitem}
 \usepackage{changepage}
 \setitemize{itemsep=-0.25em}
+\usepackage{float}
 \usepackage[T1]{fontenc}
 
 \renewcommand\labelitemi{$\cdot$}
@@ -98,7 +99,9 @@
   \vspace{-1.5em}
 }
 
-
+\newcommand{\award}[2]{
+	#1\hfill\textit{#2}
+}
 
 
 
