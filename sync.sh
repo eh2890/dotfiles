@@ -6,7 +6,7 @@ currentdate=$(date)
 
 # pulling
 cd ~/personal_settings/
-git pull
+git pull --ff-only
 
 
 # copying all files to where they are being used
