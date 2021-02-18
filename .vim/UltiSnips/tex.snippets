@@ -23,6 +23,7 @@ endsnippet
 
 # -------------------- sec
 snippet sec "\section" bA
+
 \\section{$1}
 
 $0
@@ -30,6 +31,7 @@ endsnippet
 
 # -------------------- subsec
 snippet subsec "\subsection" bA
+
 \\subsection{$1}
 
 $0
@@ -93,7 +95,7 @@ endsnippet
 
 # -------------------- tsarrow
 snippet tsarrow "tikz state arrow" bA
-($1) edge[${2:bend left}] node[${3:in place}] {$$4$} ($5)
+($1) edge[$2] node[${3:in place}] {$$4$} ($5)
 $0
 endsnippet
 
@@ -111,48 +113,57 @@ endsnippet
 # -------------------- gather
 snippet gather "gather*" bA
 \\begin{gather*}
-	$1
+	$0
 \\end{gather*}
-$0
 endsnippet
 
 # -------------------- align
 snippet align "align*" bA
 \\begin{align*}
-	$1
+	$0
 \\end{align*}
-$0
 endsnippet
 
 # -------------------- frac
-snippet frac "\frac" iA
-\\frac{$1}{$2}$0
+snippet frac "\frac" A
+\\frac{$1}{$2} $0
 endsnippet
 
+# -------------------- sqrt
+snippet sqrt "\sqrt" A
+\\sqrt{$1} $0
+endsnippet
+
+# -------------------- diff
+snippet diff "\diff" iw
+\\diff $0
+endsnippet
+
+
 # -------------------- parentheses
-snippet paren "\parentheses" iA
+snippet paren "\parentheses" A
 \\parentheses{$1}$0
 endsnippet
 
 # -------------------- braces
-snippet brace "\braces" iA
+snippet braces "\braces" A
 \\braces{$1}$0
 endsnippet
 
 # -------------------- brackets
-snippet bracket "\brackets" iA
+snippet bracket "\brackets" A
 \\brackets{$1}$0
 endsnippet
 
 
 # -------------------- si
 snippet si "\si" w
-\\SI{$1}{$2}$0
+\\SI{$1}{$2} $0
 endsnippet
 
 # -------------------- ce
 snippet ce "\ce" w
-\\ce{$1}$0
+\\ce{$1} $0
 endsnippet
 
 # -------------------- binom
@@ -160,9 +171,14 @@ snippet binom "\binom" iw
 \\binom{$1}{$2}$0
 endsnippet
 
-# -------------------- sqrt
-snippet sqrt "\sqrt" iA
-\\sqrt{$1}$0
+# -------------------- underbrace
+snippet underbrace "\underbrace" wA
+\\underbrace{$1}_{$2} $0
+endsnippet
+
+# -------------------- fdiff
+snippet fdiff "\fdiff" A
+\\fdiff{$1}{$2} $0
 endsnippet
 
 
@@ -216,7 +232,7 @@ endsnippet
 # ---------------------------------------
 
 # -------------------- text
-snippet text "\text" iwA
+snippet text "\text" iw
 \\text{$1} $0
 endsnippet
 

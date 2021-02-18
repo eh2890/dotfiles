@@ -33,16 +33,6 @@
     \vspace{-0.75em}
 }
 
-%\newcommand\contact[4]{
-%    \centerline{
-%        \makebox[0pt][c]{
-%            #1 $\vert$ #2 $\vert$ #3 $\vert$ #4
-%        }
-%    }
-%    \vspace{-0.75em}
-%}
-
-
 
 % Ressection
 \RequirePackage{titlesec}
@@ -90,6 +80,16 @@
   \end{ressubenvironment}
   \vspace{-1.5em}
 }
+
+\newcommand{\project}[4]{
+  \begin{ressubenvironment}
+  \subsection[#1]{\textbf{#1} | #2 \hfill #3}
+  \vspace{-0.67em}
+  #4
+  \end{ressubenvironment}
+  \vspace{-1.5em}
+}
+
 
 % Indented text section (for awards and skills)
 \newcommand{\indentedtextsection}[1]{
