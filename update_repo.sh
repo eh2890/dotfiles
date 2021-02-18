@@ -14,7 +14,7 @@ cp -r ~/.vim/UltiSnips/ ~/personal_settings/.vim/UltiSnips/
 # pushing to repo
 cd ~/personal_settings/
 git add -A
-git commit -m "Updated by $HOSTNAME on $currentdate"
+git commit -m "Updated by $user on $currentdate"
 git push
 
-echo "Updated by $HOSTNAME on $currentdate"
+echo "Updated by $user on $currentdate"
