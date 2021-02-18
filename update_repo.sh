@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# getting current date
-currentdate = $(date)
+# getting commit message data
+user="$(cut -d'.' -f1 <<<"${HOSTNAME}")"
+currentdate=$(date)
 
 # copying all files to ~/personal settings
 cp ~/.bashrc ~/personal_settings/.bashrc
