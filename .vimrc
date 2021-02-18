@@ -50,6 +50,7 @@ let g:vimtex_quickfix_mode=0
 let g:tex_no_error=1
 let g:vimtex_view_forward_search_on_start=0
 
+
 " UltiSnips
 Plug 'SirVer/ultisnips'
 let g:UltiSnipsExpandTrigger = '<tab>'

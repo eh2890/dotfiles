@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# getting current date
+currentdate = $(date)
+
+# copying all files to ~/personal settings
+cp ~/.bashrc ~/personal_settings/.bashrc
+cp ~/.vimrc ~/personal_settings/.vimrc
+cp ~/.vim/plugged/vimtex/ftplugin/tex.vim ~/personal_settings/.vim/plugged/vimtex/ftplugin/tex.vim
+cp -r ~/Library/texmf/tex/latex/local/ ~/personal_settings/Library/texmf/tex/latex/local/
+cp -r ~/.vim/UltiSnips/ ~/personal_settings/.vim/UltiSnips/
+
+# pushing to repo
+cd ~/personal_settings/
+git add -A
+git commit -m "Updated by $HOSTNAME on $currentdate"
+git push
+
+echo "Updated by $HOSTNAME on $currentdate"
