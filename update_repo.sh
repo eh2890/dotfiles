@@ -17,4 +17,4 @@ git add -A
 git commit -m "Updated by $user on $currentdate"
 git push
 
-echo "Updated by $user on $currentdate"
+echo "\n\nUpdated by $user on $currentdate\n\n"
