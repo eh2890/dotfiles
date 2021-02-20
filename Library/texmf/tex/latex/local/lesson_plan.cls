@@ -43,6 +43,8 @@
 % New commands
 \newcommand{\diff}{\mathop{}\!d}
 \newcommand{\parentheses}[1]{{\left(#1\right)}}
+\newcommand{\braces}[1]{{\left\{#1\right\}}}
+\newcommand{\brackets}[1]{\left[#1\right]}
 \newcommand{\fdiff}[2]{\frac{\diff #1}{\diff #2}}
 \newcommand{\fpartial}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
@@ -60,3 +62,4 @@
 \DeclareSIUnit{\atm}{atm}
 \DeclareSIUnit{\calorie}{cal}
 \DeclareSIUnit{\molal}{m}
+\DeclareSIUnit{\torr}{torr}
