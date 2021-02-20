@@ -40,5 +40,4 @@ A repository so I can back up personal settings such as <code>.bashrc</code>, <c
 
 ## To Do When I Have Time
 
-- Create a bash script or something that can do the updating for me
 - Have some kind of error check so I don't accidentally overwrite with old settings
