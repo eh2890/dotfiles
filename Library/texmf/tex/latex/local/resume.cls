@@ -15,6 +15,15 @@
 \setitemize{itemsep=-0.25em}
 \usepackage{float}
 \usepackage[T1]{fontenc}
+\usepackage{hyperref}
+
+\hypersetup{
+	colorlinks=false,
+	linkcolor=black,
+	filecolor=black,      
+	urlcolor=black,
+}
+
 
 \renewcommand\labelitemi{$\cdot$}
 
@@ -24,10 +33,18 @@
 	\vspace{0.25em}
 }
 
-\newcommand\contact[4]{
+\newcommand\contact[3]{
     \centerline{
         \makebox[0pt][c]{
-            #1 $\vert$ #2 $\vert$ #3 $\vert$ #4
+            #1 $\vert$ #2 $\vert$ #3
+        }
+    }
+}
+
+\newcommand\links[3]{
+    \centerline{
+        \makebox[0pt][c]{
+            #1 $\vert$ #2 $\vert$ #3
         }
     }
     \vspace{-0.75em}

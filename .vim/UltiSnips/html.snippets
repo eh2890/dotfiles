@@ -1,0 +1,107 @@
+# -------------------- start
+snippet start "HTML starting template" b
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>$1</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+		$0
+	</body>
+</html>
+endsnippet
+
+
+# -------------------- comment
+snippet comment "comment" wA
+<!-- $1 -->$0
+endsnippet
+
+
+# -------------------- generic tag
+snippet tag "tag" bA
+<${1:tag}>
+	$0
+</${1/(\w+).*/$1/}>
+endsnippet
+
+
+# -------------------- div
+snippet div "div" bA
+<div class="$1">
+	$0
+</div>
+endsnippet
+
+
+# -------------------- row
+snippet row "row" bA
+<div class="row">
+	$0
+</div>
+endsnippet
+
+
+# -------------------- col
+snippet col "col" bA
+<div class="col$1">
+	$0
+</div>
+endsnippet
+
+# -------------------- img
+snippet img "img" bA
+<img class="$1" src="$2" alt="${3:Alt Text}">
+$0
+endsnippet
+
+# -------------------- link
+snippet href "a href"
+<a class="$1" href="$2">$3</a> $0
+endsnippet
+
+# -------------------- container
+snippet contain "container" bA
+<div class="container">
+	$0
+</div>
+endsnippet
+
+# -------------------- <p>
+snippet pp "<p>" bA
+<p class="$1">$2</p>
+$0
+endsnippet
+
+# -------------------- strong
+snippet strong "strong" i
+<strong>$1</strong>$0
+endsnippet
+
+# -------------------- br
+snippet br "br" bA
+<br clear="all">
+$0
+endsnippet
+
+# -------------------- header
+snippet head "header" bA
+<h${1:1} class="$2">$3</h$1>$0
+endsnippet
+
+# -------------------- ul
+snippet ul "ul" bA
+<ul class="$1">
+	$0
+</ul>
+endsnippet
+
+# -------------------- li
+snippet li "li" bA
+<li>$1</li>
+$0
+endsnippet
