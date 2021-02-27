@@ -1,0 +1,53 @@
+extends html
+
+
+# -------------------- extends
+snippet extends "extends" bA
+{% extends '$1.html' %}
+$0
+endsnippet
+
+
+# -------------------- load
+snippet load "load" bA
+{% load static %}
+$0
+endsnippet
+
+
+# -------------------- static
+snippet static "static stylesheet" bA
+<link rel="stylesheet" href="{% static 'css/$1.css' %}">
+$0
+endsnippet
+
+
+# -------------------- url
+snippet url "url" i
+{% url '$1' %}
+$0
+endsnippet
+
+
+# -------------------- block
+snippet block "block and endblock" bA
+{% block content %}
+$1
+{% endblock content %}
+$0
+endsnippet
+
+
+# -------------------- for loop
+snippet for "for and endfor" bA
+{% for $1 in $2 %}
+$3
+{% endfor %}
+$0
+endsnippet
+
+
+# -------------------- var
+snippet var "variable" i
+{{ $1 }}$0
+endsnippet
