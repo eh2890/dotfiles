@@ -16,6 +16,13 @@ snippet start "HTML starting template" b
 endsnippet
 
 
+# -------------------- stylesheet
+snippet style "stylesheet" bA
+<link rel="stylesheet" href="$1">
+$0
+endsnippet
+
+
 # -------------------- comment
 snippet comment "comment" wA
 <!-- $1 -->
@@ -61,8 +68,8 @@ $0
 endsnippet
 
 # -------------------- link
-snippet href "a href"
-<a class="$1" href="$2">$3</a> $0
+snippet href "a href" i
+<a class="$1" href="$2">$3</a>$0
 endsnippet
 
 # -------------------- container
