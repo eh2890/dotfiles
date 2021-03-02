@@ -109,6 +109,7 @@
 }
 
 \newcommand{\indentedtextsection}[1]{
+	\vspace{-1.25em}
 	\begin{ressubenvironment}
 	#1
 	\end{ressubenvironment}
