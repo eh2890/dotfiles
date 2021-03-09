@@ -94,7 +94,7 @@ $0
 endsnippet
 
 # -------------------- tikz
-snippet tikz "tikzpicture" bA
+snippet tikz "tikzpicture" b
 \\begin{figure}[H]
 	\\centering
 	\\begin{tikzpicture}
@@ -115,8 +115,21 @@ snippet tsnode "tikz state node" bA
 $0
 endsnippet
 
+# -------------------- trdraw
+snippet trdraw "trdraw" bA
+\\draw
+	$0
+	;
+endsnippet
+
+# -------------------- trline
+snippet trline "trline" bA
+($1, $2) -- ($3, $4)
+$0
+endsnippet
+
 # -------------------- tikzarrow
-snippet tikzarrow "Description" bA
+snippet tsdraw "tsdraw" bA
 \\draw[->, auto]
 	$0
 	;
@@ -269,6 +282,10 @@ snippet it "italics" iw
 \\textit{$1} $0
 endsnippet
 
+# -------------------- enquote
+snippet enquote "enquote" iA
+\\enquote{$1}$0
+endsnippet
 
 
 # ---------------------------------------
