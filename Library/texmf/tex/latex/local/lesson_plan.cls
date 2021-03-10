@@ -21,7 +21,7 @@
 \usepackage{hyperref}
 \usepackage{mathrsfs}
 \usepackage[metapost]{mfpic}
-\usepackage{mhchem}
+\usepackage[version=4]{mhchem}
 \usepackage{multicol}
 \usepackage{multirow}
 \usepackage{setspace}
