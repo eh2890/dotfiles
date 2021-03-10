@@ -147,6 +147,16 @@ endsnippet
 # Math mode
 # ---------------------------------------
 
+# -------------------- math mode
+snippet mm "math mode" i
+$ $1 $ $0
+endsnippet
+
+# -------------------- quick braces
+snippet bb "quick braces" i
+{ $1 } $0
+endsnippet
+
 # -------------------- gather
 snippet gather "gather*" bA
 \\begin{gather*}
@@ -268,17 +278,17 @@ endsnippet
 # ---------------------------------------
 
 # -------------------- text
-snippet text "\text" iw
+snippet text "\text" i
 \\text{$1} $0
 endsnippet
 
 # -------------------- bf
-snippet bf "bold" iw
+snippet bf "\bold" i
 \\textbf{$1} $0
 endsnippet
 
 # -------------------- it
-snippet it "italics" iw
+snippet it "\italics" i
 \\textit{$1} $0
 endsnippet
 
