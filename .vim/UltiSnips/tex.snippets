@@ -3,7 +3,7 @@
 # ---------------------------------------
 
 # -------------------- start
-snippet start "starting code" b
+snippet start "starting code" bA
 \\documentclass{${1:class}}
 
 \\title{$2}
@@ -29,33 +29,25 @@ endsnippet
 
 # -------------------- sec
 snippet sec "\section" bA
-
 \\section{$1}
-
 $0
 endsnippet
 
 # -------------------- sec*
 snippet Sec "\section*" bA
-
 \\section*{$1}
-
 $0
 endsnippet
 
 # -------------------- subsec
 snippet subsec "\subsection" bA
-
 \\subsection{$1}
-
 $0
 endsnippet
 
 # -------------------- subsec*
 snippet Subsec "\subsection*" bA
-
 \\subsection*{$1}
-
 $0
 endsnippet
 
@@ -69,13 +61,15 @@ endsnippet
 # -------------------- begin
 snippet begin "\begin \end" bA
 \\begin{$1}
-	$0
+	$2
 \\end{$1}
+$0
 endsnippet
 
 # -------------------- center
 snippet center "\centering" i
-\\centering$0
+\\centering
+$0
 endsnippet
 
 
@@ -115,9 +109,9 @@ snippet tsnode "tikz state node" bA
 $0
 endsnippet
 
-# -------------------- trdraw
-snippet trdraw "trdraw" bA
-\\draw
+# -------------------- tikzdraw
+snippet tdraw "tdraw" bA
+\\draw[${1:->, auto}]
 	$0
 	;
 endsnippet
@@ -126,13 +120,6 @@ endsnippet
 snippet trline "trline" bA
 ($1, $2) -- ($3, $4)
 $0
-endsnippet
-
-# -------------------- tikzarrow
-snippet tsdraw "tsdraw" bA
-\\draw[->, auto]
-	$0
-	;
 endsnippet
 
 # -------------------- tsarrow
@@ -149,89 +136,90 @@ endsnippet
 
 # -------------------- math mode
 snippet mm "math mode" i
-$ $1 $ $0
+$$1$$0
 endsnippet
 
 # -------------------- quick braces
 snippet bb "quick braces" i
-{ $1 } $0
+{$1}$0
 endsnippet
 
 # -------------------- gather
 snippet gather "gather*" bA
 \\begin{gather*}
-	$0
+	$1
 \\end{gather*}
+$0
 endsnippet
 
 # -------------------- align
 snippet align "align*" bA
 \\begin{align*}
-	$0
+	$1
 \\end{align*}
+$0
 endsnippet
 
 # -------------------- frac
-snippet frac "\frac" A
-\\frac{$1}{$2} $0
+snippet frac "\frac" i
+\\frac{$1}{$2}$0
 endsnippet
 
 # -------------------- frac
 snippet \frac "\frac" iA
-\\frac{$1}{$2} $0
+\\frac{$1}{$2}$0
 endsnippet
 
 # -------------------- sqrt
-snippet sqrt "\sqrt" A
-\\sqrt{$1} $0
+snippet sqrt "\sqrt" iA
+\\sqrt{$1}$0
 endsnippet
 
 # -------------------- diff
-snippet diff "\diff" iw
-\\diff $0
+snippet diff "\diff" i
+\\diff$0
 endsnippet
 
 
 # -------------------- parentheses
-snippet paren "\parentheses" A
+snippet paren "\parentheses" i
 \\parentheses{$1}$0
 endsnippet
 
 # -------------------- braces
-snippet braces "\braces" A
+snippet braces "\braces" i
 \\braces{$1}$0
 endsnippet
 
 # -------------------- brackets
-snippet bracket "\brackets" A
+snippet bracket "\brackets" i
 \\brackets{$1}$0
 endsnippet
 
 # -------------------- si
 snippet si "\si" w
-\\SI{$1}{$2} $0
+\\SI{$1}{$2}$0
 endsnippet
 
 # -------------------- ce
 snippet ce "\ce" w
-\\ce{$1} $0
+\\ce{$1}$0
 endsnippet
 
 # -------------------- binom
-snippet binom "\binom" iw
+snippet binom "\binom" i
 \\binom{$1}{$2}$0
 endsnippet
 
 # -------------------- underbrace
 snippet underbrace "\underbrace" wA
-\\underbrace{$1}_{$2} $0
+\\underbrace{$1}_{$2}$0
 endsnippet
 
 # -------------------- fdiff
 snippet fdiff "\fdiff" A
-\\fdiff{$1}{$2} $0
+\\fdiff{$1}{$2}$0
 endsnippet
-
 
 
 
@@ -242,15 +230,17 @@ endsnippet
 # -------------------- itemize
 snippet item "itemize" bA
 \\begin{itemize}
-	\\item $0
+	\\item $1
 \\end{itemize}
+$0
 endsnippet
 
 # -------------------- enumerate
 snippet enum "enumerate" bA
 \\begin{enumerate}[$1]
-	\\item $0
+	\\item $2
 \\end{enumerate}
+$0
 endsnippet
 
 # -------------------- item
@@ -267,8 +257,9 @@ endsnippet
 # -------------------- multicols
 snippet multicols "multicols" bA
 \\begin{multicols}{$1}
-	$0
+	$2
 \\end{multicols}
+$0
 endsnippet
 
 
@@ -279,17 +270,17 @@ endsnippet
 
 # -------------------- text
 snippet text "\text" i
-\\text{$1} $0
+\\text{$1}$0
 endsnippet
 
 # -------------------- bf
 snippet bf "\bold" i
-\\textbf{$1} $0
+\\textbf{$1}$0
 endsnippet
 
 # -------------------- it
 snippet it "\italics" i
-\\textit{$1} $0
+\\textit{$1}$0
 endsnippet
 
 # -------------------- enquote
