@@ -47,7 +47,7 @@ endsnippet
 
 
 # -------------------- for loop
-snippet for "for and endfor" bA
+snippet for "for and endfor" b
 {% for $1 in $2 %}
 	$3
 {% endfor %}
@@ -64,4 +64,18 @@ endsnippet
 # -------------------- var
 snippet var "variable" i
 {{ $1 }}$0
+endsnippet
+
+
+# -------------------- csrf token
+snippet csrf "csrf" i
+{% csrf token %}$0
+endsnippet
+
+
+# -------------------- form
+snippet form "form" b
+<form action="$1" method="$2">{% csrf token%}
+	$0
+</form>
 endsnippet

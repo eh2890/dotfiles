@@ -17,13 +17,11 @@ snippet start "HTML starting template" b
 </html>
 endsnippet
 
-
 # -------------------- stylesheet
 snippet style "stylesheet" bA
 <link rel="stylesheet" href="$1">
 $0
 endsnippet
-
 
 # -------------------- comment
 snippet comment "comment" wA
@@ -31,12 +29,16 @@ snippet comment "comment" wA
 $0
 endsnippet
 
-
-# -------------------- generic tag
-snippet tag "tag" bA
+# -------------------- multiline tag
+snippet tag "multiline tag" bA
 <${1:tag}>
 	$0
 </${1/(\w+).*/$1/}>
+endsnippet
+
+# -------------------- singleline tag
+snippet Tag "singleline tag" bA
+<${1:tag}>$0</${1/(\w+).*/$1/}>
 endsnippet
 
 
@@ -47,14 +49,12 @@ snippet div "div" bA
 </div>
 endsnippet
 
-
 # -------------------- row
 snippet row "row" bA
 <div class="row">
 	$0
 </div>
 endsnippet
-
 
 # -------------------- col
 snippet col "col" bA
