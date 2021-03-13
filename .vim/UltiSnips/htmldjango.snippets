@@ -69,13 +69,13 @@ endsnippet
 
 # -------------------- csrf token
 snippet csrf "csrf" i
-{% csrf token %}$0
+{% csrf_token %}$0
 endsnippet
 
 
 # -------------------- form
 snippet form "form" b
-<form action="$1" method="$2">{% csrf token%}
+<form action="$1" method="$2">{% csrf_token %}
 	$0
 </form>
 endsnippet
