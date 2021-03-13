@@ -39,6 +39,12 @@ snippet block "block and endblock" bA
 $0
 endsnippet
 
+# -------------------- include
+snippet include "include" bA
+{% include '$1.html' %}
+$0
+endsnippet
+
 
 # -------------------- for loop
 snippet for "for and endfor" bA
@@ -46,6 +52,12 @@ snippet for "for and endfor" bA
 	$3
 {% endfor %}
 $0
+endsnippet
+
+
+# -------------------- template tag
+snippet tt "template tag" i
+{% $1 %}$0
 endsnippet
 
 
