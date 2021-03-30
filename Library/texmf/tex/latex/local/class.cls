@@ -7,6 +7,7 @@
 \usepackage[english]{babel}
 \usepackage{cancel}
 \usepackage[justification=centering]{caption}
+\usepackage{changepage}
 \usepackage{chemfig}
 \usepackage{circuitikz}
 \usepackage{color}
