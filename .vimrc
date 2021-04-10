@@ -95,7 +95,7 @@ set textwidth=0
 
 set incsearch               " search as characters are entered
 set hlsearch                " highlight matches
-set ignorecase              " ignore case when searching
+command C let @/=""
 
 
 " --------------------
