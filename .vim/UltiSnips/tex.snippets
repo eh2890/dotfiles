@@ -177,7 +177,7 @@ snippet frac "\frac" i
 endsnippet
 
 # -------------------- frac
-snippet \frac "\frac" i
+snippet \frac "\frac" iA
 \\frac{$1}{$2}$0
 endsnippet
 
@@ -187,7 +187,7 @@ snippet sqrt "\sqrt" i
 endsnippet
 
 # -------------------- sqrt
-snippet \sqrt "\sqrt" i
+snippet \sqrt "\sqrt" iA
 \\sqrt{$1}$0
 endsnippet
 
@@ -252,22 +252,27 @@ snippet fdiff "\fdiff" A
 endsnippet
 
 # -------------------- bar
-snippet bar "\bar" w
+snippet bar "\bar" i
+\\bar{$1}$0
+endsnippet
+
+# -------------------- bar
+snippet \bar "\bar" iA
 \\bar{$1}$0
 endsnippet
 
 # -------------------- langle
-snippet langle "\langle" w
+snippet langle "\langle" i
 \\langle $0
 endsnippet
 
 # -------------------- rangle
-snippet rangle "\rangle" w
+snippet rangle "\rangle" i
 \\rangle $0
 endsnippet
 
 # -------------------- angles
-snippet angles "langle and rangle" w
+snippet angles "langle and rangle" i
 \\langle $1 \\rangle $0
 endsnippet
 
