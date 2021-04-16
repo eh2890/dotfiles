@@ -83,6 +83,14 @@ snippet vspace "\vspace" i
 \\vspace{$1}$0
 endsnippet
 
+# -------------------- adjustwidth
+snippet awidth "adjustwidth" bA
+\\begin{adjustwidth}{${1:2em}}{${2:0pt}}
+	$3
+\\end{adjustwidth}
+$0
+endsnippet
+
 
 # ---------------------------------------
 # Figures, images, visuals
