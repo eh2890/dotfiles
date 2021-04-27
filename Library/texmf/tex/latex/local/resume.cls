@@ -9,6 +9,7 @@
 \setlength{\textwidth}{7.5in}
 \setlength{\textheight}{10in}
 
+\usepackage[utf8]{inputenc}
 \usepackage[margin=0.5in]{geometry}
 \usepackage{enumitem}
 \usepackage{changepage}
