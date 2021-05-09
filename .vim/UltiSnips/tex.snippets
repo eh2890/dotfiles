@@ -93,10 +93,15 @@ endsnippet
 snippet awidth "adjustwidth" bA
 \\begin{adjustwidth}{${1:2em}}{${2:0pt}}
 	$3
-\\end{adjustwidth}
-$0
+\\end{adjustwidth}$0
 endsnippet
 
+# -------------------- adjustwidth
+snippet adjustwidth "adjustwidth" bA
+\\begin{adjustwidth}{${1:2em}}{${2:0pt}}
+	$3
+\\end{adjustwidth}$0
+endsnippet
 
 # ---------------------------------------
 # Figures, images, visuals
@@ -240,6 +245,31 @@ snippet brackets "\brackets" i
 \\brackets{$1}$0
 endsnippet
 
+# -------------------- cdot
+snippet cdot "\cdot" i
+\\cdot $0
+endsnippet
+
+# -------------------- exists
+snippet exists "\exists" i
+\\exists $0
+endsnippet
+
+# -------------------- forall
+snippet forall "\forall" i
+\\forall $0
+endsnippet
+
+# -------------------- implies
+snippet implies "\implies" i
+\\implies $0
+endsnippet
+
+# -------------------- if and only if
+snippet ifaf "\iff" i
+\\iff $0
+endsnippet
+
 # -------------------- si
 snippet si "\si" w
 \\SI{$1}{$2}$0
@@ -291,9 +321,15 @@ snippet angles "langle and rangle" i
 endsnippet
 
 # -------------------- in
-snippet in "\in" i
+snippet in "\in" w
 \\in $0
 endsnippet
+
+# -------------------- suchthat
+snippet st "\suchthat" w
+\\suchthat $0
+endsnippet
+
 
 # ---------------------------------------
 # Lists
