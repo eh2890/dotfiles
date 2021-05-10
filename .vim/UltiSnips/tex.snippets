@@ -103,6 +103,7 @@ snippet adjustwidth "adjustwidth" bA
 \\end{adjustwidth}$0
 endsnippet
 
+
 # ---------------------------------------
 # Figures, images, visuals
 # ---------------------------------------
@@ -127,46 +128,55 @@ snippet tikz "tikzpicture" b
 \end{figure}
 endsnippet
 
-# -------------------- trnode
-snippet trnode "tikz regular node" bA
-\\node ($1) at ($2, $3) {$$4$};
-$0
+# -------------------- tnode
+snippet tnode "tikz regular node" bA
+\\node ($1) at ($2) {$$3$};$0
 endsnippet
 
 # -------------------- tsnode
 snippet tsnode "tikz state node" bA
-\\node[${1:state, align=center}] ($2) at ($3, $4) {$$5$};
-$0
+\\node[${1:state, align=center}] ($2) at ($3) {$$4$};$0
 endsnippet
 
 # -------------------- tikzdraw
 snippet tdraw "tdraw" bA
-\\draw[${1:->, auto}]
-	$0
-	;
+\\draw[$1] $2;$0
 endsnippet
 
-# -------------------- trline
-snippet trline "trline" bA
-($1, $2) -- ($3, $4)
-$0
+# -------------------- tikzdraw
+snippet Tdraw "tdraw" bA
+\\draw[$1]
+	$2
+	;$0
+endsnippet
+
+# -------------------- tline
+snippet tline "tline" w
+($1) -- ($2)$0
 endsnippet
 
 # -------------------- tsarrow
 snippet tsarrow "tikz state arrow" bA
-($1) edge[$2] node[${3:in place}] {$$4$} ($5)
-$0
+($1) edge[$2] node[${3:in place}] {$$4$} ($5)$0
 endsnippet
-
-
 
 # ---------------------------------------
 # Math mode
 # ---------------------------------------
 
+# -------------------- qed
+snippet qed "qed" i
+\\hfill$\\blacksquare$$0
+endsnippet
+
 # -------------------- math mode
 snippet mm "math mode" i
 $$1$$0
+endsnippet
+
+# -------------------- pow
+snippet pow "pow" i
+^{$1} $0
 endsnippet
 
 # -------------------- quick braces
@@ -208,6 +218,11 @@ endsnippet
 # -------------------- sqrt
 snippet \sqrt "\sqrt" iA
 \\sqrt{$1}$0
+endsnippet
+
+# -------------------- log
+snippet log "\log" i
+\\log{$1}$0
 endsnippet
 
 # -------------------- diff
@@ -270,6 +285,11 @@ snippet ifaf "\iff" i
 \\iff $0
 endsnippet
 
+# -------------------- dots
+snippet dots "\dots" i
+\\dots $0
+endsnippet
+
 # -------------------- si
 snippet si "\si" w
 \\SI{$1}{$2}$0
@@ -285,8 +305,18 @@ snippet binom "\binom" w
 \\binom{$1}{$2}$0
 endsnippet
 
+# -------------------- sum
+snippet sum "\sum" w
+\\sum_{$1}^{$2} $0
+endsnippet
+
+# -------------------- lim
+snippet lim "\lim" w
+\\lim_{$1} $0
+endsnippet
+
 # -------------------- underbrace
-snippet underbrace "\underbrace" wA
+snippet underbrace "\underbrace" i
 \\underbrace{$1}_{$2}$0
 endsnippet
 
@@ -330,6 +360,75 @@ snippet st "\suchthat" w
 \\suchthat $0
 endsnippet
 
+
+# ---------------------------------------
+# Symbols
+# ---------------------------------------
+
+# -------------------- alpha
+snippet alpha "\alpha" i
+\\alpha $0
+endsnippet
+
+# -------------------- beta
+snippet beta "\beta" i
+\\beta $0
+endsnippet
+
+# -------------------- delta
+snippet delta "\delta" i
+\\delta $0
+endsnippet
+
+# -------------------- Delta
+snippet Delta "\Delta" i
+\\Delta $0
+endsnippet
+
+# -------------------- theta
+snippet theta "\theta" i
+\\theta $0
+endsnippet
+
+# -------------------- Theta
+snippet Theta "\Theta" i
+\\Theta $0
+endsnippet
+
+# -------------------- omega
+snippet omega "\omega" i
+\\omega $0
+endsnippet
+
+# -------------------- Omega
+snippet Omega "\Omega" i
+\\Omega $0
+endsnippet
+
+# -------------------- varepsilon
+snippet vareps "vareps" i
+\\varepsilon $0
+endsnippet
+
+# -------------------- varepsilon
+snippet varepsilon "varepsilon" i
+\\varepsilon $0
+endsnippet
+
+# -------------------- varepsilon
+snippet epsilon "epsilon" i
+\\varepsilon $0
+endsnippet
+
+# -------------------- infty
+snippet infty "infty" i
+\\infty $0
+endsnippet
+
+# -------------------- toinfty
+snippet toinf "toinf" i
+\\to \\infty $0
+endsnippet
 
 # ---------------------------------------
 # Lists
@@ -428,3 +527,9 @@ endsnippet
 snippet label "\label" w
 \\label{$1}$0
 endsnippet
+
+# -------------------- footnote
+snippet footnote "\footnote" i
+\\footnote{$1}$0
+endsnippet
+

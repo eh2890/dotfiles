@@ -100,14 +100,14 @@
   showstringspaces=false,
   columns=flexible,
   basicstyle={\small\ttfamily},
-  numbers=none,
-  numberstyle=\tiny\color{purpl},
+  numbers=left,
+  numberstyle=\tiny\color{purple},
   keywordstyle=\color{blue},
   commentstyle=\color{green},
   stringstyle=\color{purple},
   breaklines=true,
   breakatwhitespace=true,
-  tabsize=4
+  tabsize=4,
 }
 
 
