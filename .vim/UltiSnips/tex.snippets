@@ -3,7 +3,7 @@
 # ---------------------------------------
 
 # -------------------- start
-snippet start "starting code" bA
+snippet start "starting code" b
 \\documentclass{${1:class}}
 
 \\title{$2}
@@ -22,66 +22,57 @@ $0
 endsnippet
 
 # -------------------- usepackage
-snippet usepackage "usepackage" bA
+snippet usepackage "usepackage" b
 \\usepackage{$1}$0
 endsnippet
 
 
 # -------------------- newpage
-snippet newpage "newpage" bA
-\\newpage
-$0
+snippet newpage "newpage" b
+\\newpage$0
 endsnippet
 
 # -------------------- npage
-snippet npage "npage" bA
-\\newpage
-$0
+snippet npage "npage" b
+\\newpage$0
 endsnippet
 
 # -------------------- sec
-snippet sec "\section" bA
-\\section{$1}
-$0
+snippet sec "\section" b
+\\section{$1}$0
 endsnippet
 
 # -------------------- sec*
-snippet Sec "\section*" bA
-\\section*{$1}
-$0
+snippet Sec "\section*" b
+\\section*{$1}$0
 endsnippet
 
 # -------------------- subsec
-snippet subsec "\subsection" bA
-\\subsection{$1}
-$0
+snippet subsec "\subsection" b
+\\subsection{$1}$0
 endsnippet
 
 # -------------------- subsec*
-snippet Subsec "\subsection*" bA
-\\subsection*{$1}
-$0
+snippet Subsec "\subsection*" b
+\\subsection*{$1}$0
 endsnippet
 
 
 # -------------------- setcounter
-snippet setcounter "\setcounter" bA
-\\setcounter{$1}{$2}
-$0
+snippet setcounter "\setcounter" b
+\\setcounter{$1}{$2}$0
 endsnippet
 
 # -------------------- begin
-snippet begin "\begin \end" bA
+snippet begin "\begin \end" b
 \\begin{$1}
 	$2
-\\end{$1}
-$0
+\\end{$1}$0
 endsnippet
 
 # -------------------- center
 snippet center "\centering" i
-\\centering
-$0
+\\centering$0
 endsnippet
 
 # -------------------- vspace
@@ -90,14 +81,14 @@ snippet vspace "\vspace" i
 endsnippet
 
 # -------------------- adjustwidth
-snippet awidth "adjustwidth" bA
+snippet awidth "adjustwidth" b
 \\begin{adjustwidth}{${1:2em}}{${2:0pt}}
 	$3
 \\end{adjustwidth}$0
 endsnippet
 
 # -------------------- adjustwidth
-snippet adjustwidth "adjustwidth" bA
+snippet adjustwidth "adjustwidth" b
 \\begin{adjustwidth}{${1:2em}}{${2:0pt}}
 	$3
 \\end{adjustwidth}$0
@@ -109,13 +100,12 @@ endsnippet
 # ---------------------------------------
 
 # -------------------- img
-snippet img "\figure with img" bA
+snippet img "\figure with img" b
 \\begin{figure}[H]
 	\\centering
 	\\includegraphics[width = $1cm]{img/$2}
 	\\label{fig:$2}
-\\end{figure}
-$0
+\\end{figure}$0
 endsnippet
 
 # -------------------- tikz
@@ -129,22 +119,22 @@ snippet tikz "tikzpicture" b
 endsnippet
 
 # -------------------- tnode
-snippet tnode "tikz regular node" bA
+snippet tnode "tikz regular node" b
 \\node ($1) at ($2) {$$3$};$0
 endsnippet
 
 # -------------------- tsnode
-snippet tsnode "tikz state node" bA
+snippet tsnode "tikz state node" b
 \\node[${1:state, align=center}] ($2) at ($3) {$$4$};$0
 endsnippet
 
 # -------------------- tikzdraw
-snippet tdraw "tdraw" bA
+snippet tdraw "tdraw" b
 \\draw[$1] $2;$0
 endsnippet
 
 # -------------------- tikzdraw
-snippet Tdraw "tdraw" bA
+snippet Tdraw "Tdraw" b
 \\draw[$1]
 	$2
 	;$0
@@ -156,7 +146,7 @@ snippet tline "tline" w
 endsnippet
 
 # -------------------- tsarrow
-snippet tsarrow "tikz state arrow" bA
+snippet tsarrow "tikz state arrow" b
 ($1) edge[$2] node[${3:in place}] {$$4$} ($5)$0
 endsnippet
 
@@ -176,7 +166,12 @@ endsnippet
 
 # -------------------- pow
 snippet pow "pow" i
-^{$1} $0
+^{$1}$0
+endsnippet
+
+# -------------------- sub
+snippet sub "sub" i
+_{$1}$0
 endsnippet
 
 # -------------------- quick braces
@@ -185,19 +180,17 @@ snippet bb "quick braces" i
 endsnippet
 
 # -------------------- gather
-snippet gather "gather*" bA
+snippet gather "gather*" b
 \\begin{gather*}
 	$1
-\\end{gather*}
-$0
+\\end{gather*}$0
 endsnippet
 
 # -------------------- align
-snippet align "align*" bA
+snippet align "align*" b
 \\begin{align*}
 	$1
-\\end{align*}
-$0
+\\end{align*}$0
 endsnippet
 
 # -------------------- frac
@@ -225,24 +218,34 @@ snippet log "\log" i
 \\log{$1}$0
 endsnippet
 
+# -------------------- log_
+snippet log_ "\log_" i
+\\log_{$1}{$2}$0
+endsnippet
+
+# -------------------- ln
+snippet ln "\ln" i
+\\ln{$1}$0
+endsnippet
+
 # -------------------- diff
 snippet diff "\diff" i
-\\diff $0
+\\diff$0
 endsnippet
 
 # -------------------- leq
 snippet leq "\leq" i
-\\leq $0
+\\leq$0
 endsnippet
 
 # -------------------- geq
 snippet geq "\geq" i
-\\geq $0
+\\geq$0
 endsnippet
 
 # -------------------- neq
 snippet neq "\neq" i
-\\neq $0
+\\neq$0
 endsnippet
 
 # -------------------- parentheses
@@ -262,32 +265,32 @@ endsnippet
 
 # -------------------- cdot
 snippet cdot "\cdot" i
-\\cdot $0
+\\cdot$0
 endsnippet
 
 # -------------------- exists
 snippet exists "\exists" i
-\\exists $0
+\\exists$0
 endsnippet
 
 # -------------------- forall
 snippet forall "\forall" i
-\\forall $0
+\\forall$0
 endsnippet
 
 # -------------------- implies
 snippet implies "\implies" i
-\\implies $0
+\\implies$0
 endsnippet
 
 # -------------------- if and only if
 snippet ifaf "\iff" i
-\\iff $0
+\\iff$0
 endsnippet
 
 # -------------------- dots
 snippet dots "\dots" i
-\\dots $0
+\\dots$0
 endsnippet
 
 # -------------------- si
@@ -312,7 +315,7 @@ endsnippet
 
 # -------------------- lim
 snippet lim "\lim" w
-\\lim_{$1} $0
+\\lim_{$1}$0
 endsnippet
 
 # -------------------- underbrace
@@ -337,27 +340,27 @@ endsnippet
 
 # -------------------- langle
 snippet langle "\langle" i
-\\langle $0
+\\langle$0
 endsnippet
 
 # -------------------- rangle
 snippet rangle "\rangle" i
-\\rangle $0
+\\rangle$0
 endsnippet
 
 # -------------------- angles
 snippet angles "langle and rangle" i
-\\langle $1 \\rangle $0
+\\langle $1 \\rangle$0
 endsnippet
 
 # -------------------- in
 snippet in "\in" w
-\\in $0
+\\in$0
 endsnippet
 
 # -------------------- suchthat
 snippet st "\suchthat" w
-\\suchthat $0
+\\suchthat$0
 endsnippet
 
 
@@ -367,67 +370,57 @@ endsnippet
 
 # -------------------- alpha
 snippet alpha "\alpha" i
-\\alpha $0
+\\alpha$0
 endsnippet
 
 # -------------------- beta
 snippet beta "\beta" i
-\\beta $0
+\\beta$0
 endsnippet
 
 # -------------------- delta
 snippet delta "\delta" i
-\\delta $0
+\\delta$0
 endsnippet
 
 # -------------------- Delta
 snippet Delta "\Delta" i
-\\Delta $0
+\\Delta$0
 endsnippet
 
 # -------------------- theta
 snippet theta "\theta" i
-\\theta $0
+\\theta$0
 endsnippet
 
 # -------------------- Theta
 snippet Theta "\Theta" i
-\\Theta $0
+\\Theta$0
 endsnippet
 
 # -------------------- omega
 snippet omega "\omega" i
-\\omega $0
+\\omega$0
 endsnippet
 
 # -------------------- Omega
 snippet Omega "\Omega" i
-\\Omega $0
+\\Omega$0
 endsnippet
 
 # -------------------- varepsilon
-snippet vareps "vareps" i
-\\varepsilon $0
-endsnippet
-
-# -------------------- varepsilon
-snippet varepsilon "varepsilon" i
-\\varepsilon $0
-endsnippet
-
-# -------------------- varepsilon
-snippet epsilon "epsilon" i
-\\varepsilon $0
+snippet eps "eps" i
+\\varepsilon$0
 endsnippet
 
 # -------------------- infty
 snippet infty "infty" i
-\\infty $0
+\\infty$0
 endsnippet
 
 # -------------------- toinfty
 snippet toinf "toinf" i
-\\to \\infty $0
+\\to\\infty$0
 endsnippet
 
 # ---------------------------------------
