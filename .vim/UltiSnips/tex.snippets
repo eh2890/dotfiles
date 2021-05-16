@@ -3,7 +3,7 @@
 # ---------------------------------------
 
 # -------------------- start
-snippet start "starting code" b
+snippet start "starting code" bA
 \\documentclass{${1:class}}
 
 \\title{$2}
@@ -22,49 +22,49 @@ $0
 endsnippet
 
 # -------------------- usepackage
-snippet usepackage "usepackage" b
+snippet usepackage "usepackage" bA
 \\usepackage{$1}$0
 endsnippet
 
 
 # -------------------- newpage
-snippet newpage "newpage" b
+snippet newpage "newpage" bA
 \\newpage$0
 endsnippet
 
 # -------------------- npage
-snippet npage "npage" b
+snippet npage "npage" bA
 \\newpage$0
 endsnippet
 
 # -------------------- sec
-snippet sec "\section" b
+snippet sec "\section" bA
 \\section{$1}$0
 endsnippet
 
 # -------------------- sec*
-snippet Sec "\section*" b
+snippet Sec "\section*" bA
 \\section*{$1}$0
 endsnippet
 
 # -------------------- subsec
-snippet subsec "\subsection" b
+snippet subsec "\subsection" bA
 \\subsection{$1}$0
 endsnippet
 
 # -------------------- subsec*
-snippet Subsec "\subsection*" b
+snippet Subsec "\subsection*" bA
 \\subsection*{$1}$0
 endsnippet
 
 
 # -------------------- setcounter
-snippet setcounter "\setcounter" b
+snippet setcounter "\setcounter" bA
 \\setcounter{$1}{$2}$0
 endsnippet
 
 # -------------------- begin
-snippet begin "\begin \end" b
+snippet begin "\begin \end" bA
 \\begin{$1}
 	$2
 \\end{$1}$0
@@ -81,14 +81,14 @@ snippet vspace "\vspace" i
 endsnippet
 
 # -------------------- adjustwidth
-snippet awidth "adjustwidth" b
+snippet awidth "adjustwidth" bA
 \\begin{adjustwidth}{${1:2em}}{${2:0pt}}
 	$3
 \\end{adjustwidth}$0
 endsnippet
 
 # -------------------- adjustwidth
-snippet adjustwidth "adjustwidth" b
+snippet adjustwidth "adjustwidth" bA
 \\begin{adjustwidth}{${1:2em}}{${2:0pt}}
 	$3
 \\end{adjustwidth}$0
@@ -100,7 +100,7 @@ endsnippet
 # ---------------------------------------
 
 # -------------------- img
-snippet img "\figure with img" b
+snippet img "\figure with img" bA
 \\begin{figure}[H]
 	\\centering
 	\\includegraphics[width = $1cm]{img/$2}
@@ -109,7 +109,7 @@ snippet img "\figure with img" b
 endsnippet
 
 # -------------------- tikz
-snippet tikz "tikzpicture" b
+snippet tikz "tikzpicture" bA
 \\begin{figure}[H]
 	\\centering
 	\\begin{tikzpicture}
