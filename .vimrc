@@ -107,6 +107,11 @@ autocmd FileType text setlocal spell spelllang=en_us
 autocmd FileType help setlocal nospell
                             " no spellcheck Vim help files
 
+" --------------------
+" Misc
+" --------------------
+
+set viminfo='100,<1000,s100,h
 
 " --------------------
 " Keeping directory clean
