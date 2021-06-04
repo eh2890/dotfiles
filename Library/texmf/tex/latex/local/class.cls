@@ -27,6 +27,7 @@
 \usepackage{modiagram}
 \usepackage{multicol}
 \usepackage{multirow}
+\usepackage{nameref}
 \usepackage{setspace}
 \usepackage[binary-units]{siunitx}
 \usepackage{tikz}
