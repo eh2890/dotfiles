@@ -29,12 +29,14 @@ endsnippet
 
 # -------------------- newpage
 snippet newpage "newpage" bA
-\\newpage$0
+\\newpage
+$0
 endsnippet
 
 # -------------------- npage
 snippet npage "npage" bA
-\\newpage$0
+\\newpage
+$0
 endsnippet
 
 # -------------------- sec
@@ -282,32 +284,37 @@ endsnippet
 
 # -------------------- cdot
 snippet cdot "\cdot" i
-\\cdot$0
+\\cdot $0
+endsnippet
+
+# -------------------- times
+snippet times "\times" i
+\\times $0
 endsnippet
 
 # -------------------- exists
 snippet exists "\exists" i
-\\exists$0
+\\exists $0
 endsnippet
 
 # -------------------- forall
 snippet forall "\forall" i
-\\forall$0
+\\forall $0
 endsnippet
 
 # -------------------- implies
 snippet implies "\implies" i
-\\implies$0
+\\implies $0
 endsnippet
 
 # -------------------- if and only if
 snippet ifaf "\iff" i
-\\iff$0
+\\iff $0
 endsnippet
 
 # -------------------- dots
 snippet dots "\dots" i
-\\dots$0
+\\dots $0
 endsnippet
 
 # -------------------- si
@@ -357,12 +364,12 @@ endsnippet
 
 # -------------------- langle
 snippet langle "\langle" i
-\\langle$0
+\\langle $0
 endsnippet
 
 # -------------------- rangle
 snippet rangle "\rangle" i
-\\rangle$0
+\\rangle $0
 endsnippet
 
 # -------------------- angles
@@ -372,12 +379,12 @@ endsnippet
 
 # -------------------- in
 snippet in "\in" w
-\\in$0
+\\in $0
 endsnippet
 
 # -------------------- suchthat
 snippet st "\suchthat" w
-\\suchthat$0
+\\suchthat $0
 endsnippet
 
 
@@ -387,67 +394,67 @@ endsnippet
 
 # -------------------- alpha
 snippet alpha "\alpha" i
-\\alpha$0
+\\alpha $0
 endsnippet
 
 # -------------------- beta
 snippet beta "\beta" i
-\\beta$0
+\\beta $0
 endsnippet
 
 # -------------------- delta
 snippet delta "\delta" i
-\\delta$0
+\\delta $0
 endsnippet
 
 # -------------------- Delta
 snippet Delta "\Delta" i
-\\Delta$0
+\\Delta $0
 endsnippet
 
 # -------------------- theta
 snippet theta "\theta" i
-\\theta$0
+\\theta $0
 endsnippet
 
 # -------------------- Theta
 snippet Theta "\Theta" i
-\\Theta$0
+\\Theta $0
 endsnippet
 
 # -------------------- Phi
 snippet Phi "\Phi" i
-\\Phi$0
+\\Phi $0
 endsnippet
 
 # -------------------- phi
 snippet phi "\phi" i
-\\phi$0
-endsnippet
-
-# -------------------- omega
-snippet omega "\omega" i
-\\omega$0
+\\phi $0
 endsnippet
 
 # -------------------- Omega
 snippet Omega "\Omega" i
-\\Omega$0
+\\Omega $0
+endsnippet
+
+# -------------------- omega
+snippet omega "\omega" i
+\\omega $0
 endsnippet
 
 # -------------------- varepsilon
 snippet eps "eps" i
-\\varepsilon$0
+\\varepsilon $0
 endsnippet
 
 # -------------------- infty
 snippet infty "infty" i
-\\infty$0
+\\infty $0
 endsnippet
 
 # -------------------- toinfty
 snippet toinf "toinf" i
-\\to\\infty$0
+\\to\\infty $0
 endsnippet
 
 # ---------------------------------------
@@ -485,8 +492,6 @@ snippet multicols "multicols" bA
 	$2
 \\end{multicols}$0
 endsnippet
-
-
 
 # ---------------------------------------
 # Text formatting
@@ -546,6 +551,11 @@ endsnippet
 # -------------------- ref
 snippet ref "\ref" w
 \\ref{$1}$0
+endsnippet
+
+# -------------------- nameref
+snippet nameref "\nameref" w
+\\nameref{$1}$0
 endsnippet
 
 # -------------------- label
