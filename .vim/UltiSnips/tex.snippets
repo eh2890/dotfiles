@@ -29,14 +29,12 @@ endsnippet
 
 # -------------------- newpage
 snippet newpage "newpage" bA
-\\newpage
-$0
+\\newpage$0
 endsnippet
 
 # -------------------- npage
 snippet npage "npage" bA
-\\newpage
-$0
+\\newpage$0
 endsnippet
 
 # -------------------- sec
@@ -66,7 +64,7 @@ snippet setcounter "\setcounter" bA
 endsnippet
 
 # -------------------- begin
-snippet begin "\begin \end" bA
+snippet begin "\begin \end" w
 \\begin{$1}
 	$2
 \\end{$1}$0
@@ -132,7 +130,10 @@ endsnippet
 
 # -------------------- tikzdraw
 snippet tdraw "tdraw" b
-\\draw[$1] $2;$0
+\\draw[$1]
+	$2
+;
+$0
 endsnippet
 
 # -------------------- tikzdraw
@@ -387,6 +388,44 @@ snippet st "\suchthat" w
 \\suchthat $0
 endsnippet
 
+# ---------------------------------------
+# Matrices
+# ---------------------------------------
+
+# -------------------- matrix
+snippet nmatrix "\matrix" w
+\\begin{matrix}
+	$1
+\\end{matrix}
+endsnippet
+
+# -------------------- pmatrix
+snippet pmatrix "\pmatrix" w
+\\begin{pmatrix}
+	$1
+\\end{pmatrix}
+endsnippet
+
+# -------------------- bmatrix
+snippet bmatrix "\bmatrix" w
+\\begin{bmatrix}
+	$1
+\\end{bmatrix}
+endsnippet
+
+# -------------------- Bmatrix
+snippet Bmatrix "\Bmatrix" w
+\\begin{Bmatrix}
+	$1
+\\end{Bmatrix}
+endsnippet
+
+# -------------------- vmatrix
+snippet vmatrix "\vmatrix" w
+\\begin{vmatrix}
+	$1
+\\end{vmatrix}
+endsnippet
 
 # ---------------------------------------
 # Symbols
@@ -420,6 +459,10 @@ endsnippet
 # -------------------- Theta
 snippet Theta "\Theta" i
 \\Theta $0
+endsnippet
+
+snippet pi "\pi" i
+\\pi $0
 endsnippet
 
 # -------------------- Phi

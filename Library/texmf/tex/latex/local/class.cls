@@ -58,7 +58,6 @@
 \setlength{\headheight}{14pt}
 \pagenumbering{arabic}
 \pagestyle{fancy}
-\setlength\parindent{0cm}
 
 
 % New commands
