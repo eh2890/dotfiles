@@ -273,6 +273,11 @@ snippet paren "\parentheses" i
 \\parentheses{$1}$0
 endsnippet
 
+# -------------------- pp
+snippet pp "()" i
+($1)$0
+endsnippet
+
 # -------------------- braces
 snippet braces "\braces" i
 \\braces{$1}$0
@@ -341,6 +346,16 @@ endsnippet
 # -------------------- lim
 snippet lim "\lim" w
 \\lim_{$1}$0
+endsnippet
+
+# -------------------- max
+snippet max "\max" w
+\\max_{$1} $0
+endsnippet
+
+# -------------------- min
+snippet min "\min" w
+\\min_{$1} $0
 endsnippet
 
 # -------------------- underbrace
