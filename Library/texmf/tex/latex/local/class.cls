@@ -49,7 +49,6 @@
 \tikzset{in place/.style={auto=false, fill=white, inner sep=2pt}}
 
 
-
 % Page settings
 \allowdisplaybreaks
 \setlength\parindent{24pt}
@@ -94,6 +93,7 @@
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
+
 \lstset{frame=tb,
   aboveskip=3mm,
   belowskip=3mm,
@@ -111,12 +111,23 @@
 }
 
 
-% Proof settings
-\newtheorem{theorem}{Theorem}
+% Theorem settings
+\theoremstyle{definition}
+
+\newtheorem{theorem}{Theorem}[section]
 \newtheorem*{theorem*}{Theorem}
 
-\newtheorem{definition}{Definition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem*{corollary*}{Corollary}
+
+\newtheorem{lemma}{Lemma}[theorem]
+\newtheorem*{lemma*}{Lemma}
+
+\newtheorem{definition}{Definition}[section]
 \newtheorem*{definition*}{Definition}
+
+\newtheorem{claim}{Claim}[section]
+\newtheorem*{claim*}{Claim}
 
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
