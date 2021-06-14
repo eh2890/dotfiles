@@ -31,6 +31,7 @@
 \usepackage{setspace}
 \usepackage[binary-units]{siunitx}
 \usepackage{tikz}
+\usepackage[normalem]{ulem}
 \usepackage{pgfplots}
 \usepackage{proof}
 
@@ -113,6 +114,7 @@
 
 % Theorem settings
 \theoremstyle{definition}
+\renewcommand\qedsymbol{$\blacksquare$}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem*{theorem*}{Theorem}

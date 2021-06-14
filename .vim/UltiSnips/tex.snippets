@@ -94,6 +94,12 @@ snippet adjustwidth "adjustwidth" bA
 \\end{adjustwidth}$0
 endsnippet
 
+# -------------------- tab
+snippet tab "adjustwidth" b
+\\begin{adjustwidth}{2em}{0pt}
+	$1
+\\end{adjustwidth}$0
+endsnippet
 
 # ---------------------------------------
 # Figures, images, visuals
@@ -203,6 +209,69 @@ snippet cases "cases" w
 \\end{cases}$0
 endsnippet
 
+# -------------------- theorem
+snippet theorem "theorem" w
+\\begin{theorem}
+$1
+\\end{theorem}$0
+endsnippet
+
+# -------------------- theorem
+snippet theorem* "theorem*" w
+\\begin{theorem*}
+$1
+\\end{theorem*}$0
+endsnippet
+
+# -------------------- lemma
+snippet lemma "lemma" w
+\\begin{lemma}
+$1
+\\end{lemma}$0
+endsnippet
+
+# -------------------- lemma
+snippet lemma* "lemma*" w
+\\begin{lemma*}
+$1
+\\end{lemma*}$0
+endsnippet
+
+# -------------------- definition
+snippet definition "definition" w
+\\begin{definition}
+$1
+\\end{definition}$0
+endsnippet
+
+# -------------------- definition
+snippet definition* "definition*" w
+\\begin{definition*}
+$1
+\\end{definition*}$0
+endsnippet
+
+# -------------------- claim
+snippet claim "claim" w
+\\begin{claim}
+$1
+\\end{claim}$0
+endsnippet
+
+# -------------------- claim
+snippet claim* "claim*" w
+\\begin{claim*}
+$1
+\\end{claim*}$0
+endsnippet
+
+# -------------------- proof
+snippet proof "proof" w
+\\begin{proof}
+$1
+\\end{proof}$0
+endsnippet
+
 # -------------------- frac
 snippet frac "\frac" i
 \\frac{$1}{$2}$0
@@ -263,9 +332,34 @@ snippet approx "\approx" i
 \\approx $0
 endsnippet
 
+# -------------------- cap
+snippet cap "cap" i
+\\cap $0
+endsnippet
+
+# -------------------- cup
+snippet cup "cup" i
+\\cup $0
+endsnippet
+
+# -------------------- land
+snippet land "land" i
+\\land $0
+endsnippet
+
+# -------------------- lor
+snippet lor "lor" i
+\\lor $0
+endsnippet
+
 # -------------------- pr
 snippet pr "\Pr" i
 \\Pr\\parentheses{$1}$0
+endsnippet
+
+# -------------------- spd
+snippet spd "shortest path distance" i
+\\delta($1)$0
 endsnippet
 
 # -------------------- parentheses
@@ -583,6 +677,11 @@ endsnippet
 # -------------------- enquote
 snippet enq "enquote" i
 \\enquote{$1}$0
+endsnippet
+
+# -------------------- sout
+snippet sout "strikeout" i
+\\sout{$1}$0
 endsnippet
 
 # -------------------- mathbb
