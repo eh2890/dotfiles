@@ -29,6 +29,7 @@
 \usepackage{multirow}
 \usepackage{nameref}
 \usepackage{setspace}
+\usepackage{subcaption}
 \usepackage[binary-units]{siunitx}
 \usepackage{tikz}
 \usepackage[normalem]{ulem}
@@ -58,6 +59,7 @@
 \setlength{\headheight}{14pt}
 \pagenumbering{arabic}
 \pagestyle{fancy}
+\captionsetup[subfigure]{justification=raggedright}
 
 
 % New commands
