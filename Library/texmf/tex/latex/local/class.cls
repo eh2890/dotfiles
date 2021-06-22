@@ -59,7 +59,7 @@
 \setlength{\headheight}{14pt}
 \pagenumbering{arabic}
 \pagestyle{fancy}
-\captionsetup[subfigure]{justification=raggedright}
+\captionsetup[subfigure]{justification=justified}
 
 
 % New commands
