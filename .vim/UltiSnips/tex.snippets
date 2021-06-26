@@ -452,9 +452,14 @@ snippet dots "\dots" i
 \\dots $0
 endsnippet
 
+# -------------------- SI
+snippet Si "\Si" w
+\\SI{$1}{$2}$0
+endsnippet
+
 # -------------------- si
 snippet si "\si" w
-\\SI{$1}{$2}$0
+\\si{$1}$0
 endsnippet
 
 # -------------------- ce
@@ -685,7 +690,10 @@ snippet ii "\item" bA
 \\item $0
 endsnippet
 
-
+# -------------------- item[]
+snippet Ii "\item[]" bA
+\\item[$1] $0
+endsnippet
 
 # ---------------------------------------
 # Tables, columns, and rows
