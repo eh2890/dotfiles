@@ -141,22 +141,14 @@ endsnippet
 
 # -------------------- tsnode
 snippet tsnode "tikz state node" b
-\\node[${1:state, align=center}] ($2) at ($3) {$$4$};$0
+\\node[${1:state}] ($2) at ($3) {$$4$};$0
 endsnippet
 
 # -------------------- tikzdraw
 snippet tdraw "tdraw" b
 \\draw[$1]
 	$2
-;
-$0
-endsnippet
-
-# -------------------- tikzdraw
-snippet Tdraw "Tdraw" b
-\\draw[$1]
-	$2
-	;$0
+;$0
 endsnippet
 
 # -------------------- tline
@@ -760,6 +752,11 @@ snippet lst "lstlisting" bA
 \begin{lstlisting}[language=$1]
 $0
 \end{lstlisting}
+endsnippet
+
+# -------------------- 
+snippet latex "latex" i
+\\LaTeX $0
 endsnippet
 
 # ---------------------------------------
