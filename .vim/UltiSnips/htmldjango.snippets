@@ -2,7 +2,7 @@ extends html
 
 # -------------------- extends
 snippet extends "extends" bA
-{% extends '$1.html' %}$0
+{% extends '${1:base}.html' %}$0
 endsnippet
 
 # -------------------- load
@@ -21,11 +21,17 @@ snippet url "url" i
 {% url '$1' $2 %}$0
 endsnippet
 
+# -------------------- url_for
+snippet urlfor "urlfor" i
+{{ url_for($1) }}$0
+endsnippet
+
 # -------------------- block
 snippet block "block and endblock" bA
-{% block content %}
-	$1
-{% endblock content %}$0
+{% block ${1:content} %}
+	$2
+{% endblock ${1/(\w+).*/$1/} %}
+$0
 endsnippet
 
 # -------------------- include
@@ -37,7 +43,8 @@ endsnippet
 snippet for "for and endfor" b
 {% for $1 in $2 %}
 	$3
-{% endfor %}$0
+{% endfor %}
+$0
 endsnippet
 
 # -------------------- template tag
