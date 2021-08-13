@@ -10,7 +10,7 @@
 \setlength{\textheight}{10in}
 
 \usepackage[utf8]{inputenc}
-\usepackage[margin=0.5in]{geometry}
+\usepackage[margin=0.25in]{geometry}
 \usepackage{enumitem}
 \usepackage{changepage}
 \setitemize{itemsep=-0.25em}
@@ -35,11 +35,13 @@
 }
 
 \newcommand\contact[3]{
+    \vspace{0.25em}
     \centerline{
         \makebox[0pt][c]{
             #1 $\vert$ #2 $\vert$ #3
         }
     }
+    \vspace{-0.5em}
 }
 
 \newcommand\links[3]{
@@ -64,7 +66,7 @@
 	\section{#1}
 	\vspace{-1em}
 	\titlerule
-	\vspace{0.5em}
+	\vspace{1em}
 }
 
 % Ressubsection(*)
@@ -84,8 +86,8 @@
   
 \newcommand{\ressubsectioncomma}[5]{
 	\begin{ressubenvironment}
-	\subsection[#1]{\textbf{#1}\hfill\textbf{#2}\\ \textit{#3} \hfill \textit{#4}}
-	\vspace{-0.67em}
+	\subsection[#1]{\textbf{#1}\hfill#2\\ \textit{#3} \hfill \textit{#4}}
+	\vspace{-0.5em}
 	#5
 	\end{ressubenvironment}
 	\vspace{-1.5em}
@@ -95,6 +97,15 @@
 	\begin{ressubenvironment}
 	\subsection[#1]{\textbf{#1} #2 \hfill #3}
 	\vspace{-0.67em}
+	#4
+	\end{ressubenvironment}
+	\vspace{-1.5em}
+}
+
+\newcommand{\newressubsection}[4]{
+	\begin{ressubenvironment}
+	\subsection[#1]{\textbf{#1}, #2\hfill #3\\}
+	\vspace{-1.75em}
 	#4
 	\end{ressubenvironment}
 	\vspace{-1.5em}
@@ -118,7 +129,8 @@
 }
 
 \newcommand{\award}[2]{
-	#1\hfill\textit{#2}
+	\textbf{#1}\hfill#2
+	\vspace{-1.5em}
 }
 
 
