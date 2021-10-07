@@ -111,6 +111,15 @@
 	\vspace{-1.5em}
 }
 
+\newcommand{\courses}[2]{
+    \begin{ressubenvironment}
+    \subsection[#1]{\textbf{#1}}
+    \vspace{-0.67em}
+    #2
+	\end{ressubenvironment}
+	\vspace{-1.5em}
+}
+
 \newcommand{\project}[4]{
 	\begin{ressubenvironment}
 	\subsection[#1]{\textbf{#1} | #2 \hfill #3}

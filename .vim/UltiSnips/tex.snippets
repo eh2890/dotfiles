@@ -75,6 +75,13 @@ snippet begin "\begin \end" w
 \\end{$1}$0
 endsnippet
 
+# -------------------- frame
+snippet frame "frame" bA
+\\begin{frame}{$1}
+	$2
+\\end{frame}$0
+endsnippet
+
 # -------------------- center
 snippet center "\centering" i
 \\centering$0
@@ -115,11 +122,26 @@ endsnippet
 # Figures, images, visuals
 # ---------------------------------------
 
+# -------------------- table
+snippet fig "figure" bA
+\\begin{figure}[H]
+\\end{figure}$0
+endsnippet
+
 # -------------------- img
 snippet img "\figure with img" bA
 \\begin{figure}[H]
 	\\centering
 	\\includegraphics[width = $1cm]{img/$2}
+\\end{figure}$0
+endsnippet
+
+# -------------------- Img
+snippet Img "\figure with Img" bA
+\\begin{figure}[H]
+	\\centering
+	\\includegraphics[width = $1cm]{img/$2}
+	\\caption{$3}
 	\\label{fig:$2}
 \\end{figure}$0
 endsnippet
@@ -747,7 +769,7 @@ endsnippet
 
 # -------------------- lstlisting
 snippet lst "lstlisting" bA
-\begin{lstlisting}[language=$1]
+\begin{lstlisting}[language = $1]
 $0
 \end{lstlisting}
 endsnippet

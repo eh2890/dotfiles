@@ -53,7 +53,7 @@
 
 % Page settings
 \allowdisplaybreaks
-\setlength\parindent{24pt}
+
 \opengraphsfile{myfigs}
 \frenchspacing
 \setlength{\headheight}{14pt}
