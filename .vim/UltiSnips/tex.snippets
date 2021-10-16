@@ -125,6 +125,7 @@ endsnippet
 # -------------------- table
 snippet fig "figure" bA
 \\begin{figure}[H]
+$1
 \\end{figure}$0
 endsnippet
 
@@ -144,6 +145,54 @@ snippet Img "\figure with Img" bA
 	\\caption{$3}
 	\\label{fig:$2}
 \\end{figure}$0
+endsnippet
+
+# -------------------- graph
+snippet graph "plot" bA
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+	lines = left,
+]
+\addplot [
+	domain=0:10,
+	samples=100,
+	color=red,
+]
+{$1};
+\end{axis}
+\end{tikzpicture}
+\end{figure}$0
+endsnippet
+
+# -------------------- graph
+snippet plot "plot" bA
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+	lines = left,
+]
+\addplot [
+	domain=0:10,
+	samples=100,
+	color=red,
+]
+{$1};
+\end{axis}
+\end{tikzpicture}
+\end{figure}$0
+endsnippet
+
+# -------------------- addplot
+snippet addplot "addplot" bA
+\addplot [
+	domain=$1,
+	samples=100,
+	color=red,
+]
+{$2};$0
 endsnippet
 
 # -------------------- tikz
@@ -168,7 +217,9 @@ endsnippet
 
 # -------------------- tikzdraw
 snippet tdraw "tdraw" b
-\\draw[$1] $2;$0
+\\draw[$1]
+	$2
+;$0
 endsnippet
 
 # -------------------- tline
@@ -354,6 +405,11 @@ snippet diff "\diff" i
 \\diff $0
 endsnippet
 
+# -------------------- 
+snippet int "\int" i
+\\int_{$1}^{$2}$0
+endsnippet
+
 # -------------------- leq
 snippet leq "\leq" i
 \\leq $0
@@ -402,11 +458,6 @@ endsnippet
 # -------------------- pr
 snippet pr "\Pr" i
 \\Pr\\parentheses{$1}$0
-endsnippet
-
-# -------------------- spd
-snippet spd "shortest path distance" i
-\\delta($1)$0
 endsnippet
 
 # -------------------- parentheses
@@ -660,6 +711,11 @@ endsnippet
 # -------------------- varepsilon
 snippet eps "eps" i
 \\varepsilon $0
+endsnippet
+
+# -------------------- del
+snippet del "del" i
+\\partial $0
 endsnippet
 
 # -------------------- infty
