@@ -122,10 +122,21 @@ endsnippet
 # Figures, images, visuals
 # ---------------------------------------
 
-# -------------------- table
+# -------------------- fig
 snippet fig "figure" bA
 \\begin{figure}[H]
-$1
+	\\centering
+	$1
+\\end{figure}$0
+endsnippet
+
+# -------------------- Fig
+snippet Fig "Figure" bA
+\\begin{figure}[H]
+	\\centering
+	$1
+	\\caption{$3}
+	\\label{fig:$2}
 \\end{figure}$0
 endsnippet
 
@@ -225,6 +236,11 @@ endsnippet
 # -------------------- tline
 snippet tline "tline" w
 ($1) -- ($2)$0
+endsnippet
+
+# -------------------- tarrow
+snippet tarrow "tarrow" w
+\\draw[->, auto] ($1) -- ($2) node[midway,$3] {$4};$0
 endsnippet
 
 snippet tcirc "tcirc" w
@@ -447,6 +463,11 @@ endsnippet
 # -------------------- subseteq
 snippet subset "subseteq" i
 \\subseteq $0
+endsnippet
+
+# -------------------- neg
+snippet neg "neg" i
+\\neg $0
 endsnippet
 
 # -------------------- land

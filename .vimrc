@@ -88,6 +88,8 @@ filetype indent on          " load filetype-specific indent files
 set showmatch               " highlight matching [{()}]
 set wrap linebreak nolist   " wrap text
 set textwidth=0
+set scrolloff=0
+set mouse=
 
 " --------------------
 " Searching
