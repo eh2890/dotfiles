@@ -121,7 +121,7 @@ alias l='ls -CF'
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
 alias skim='open -a Skim.app'
 alias preview='open -a Preview'
-alias haskell='stack --resolver lts-18.10 ghci'
+alias haskell='stack --resolver lts-18.14 ghci'
 
 # setting up icloud path
 shopt -s cdable_vars
