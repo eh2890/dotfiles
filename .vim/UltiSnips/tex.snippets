@@ -1,3 +1,4 @@
+priority 5
 # ---------------------------------------
 # Organization
 # ---------------------------------------
@@ -21,62 +22,74 @@ $0
 \\end{document}
 endsnippet
 
+priority 10
 # -------------------- usepackage
 snippet usepackage "usepackage" b
 \\usepackage{$1}$0
 endsnippet
 
+priority 3
 # -------------------- toc
 snippet toc "tableofcontents" bA
 \\tableofcontents
 \\newpage$0
 endsnippet
 
+priority 7
 # -------------------- newpage
 snippet newpage "newpage" bA
 \\newpage$0
 endsnippet
 
+priority 5
 # -------------------- npage
 snippet npage "npage" bA
 \\newpage$0
 endsnippet
 
+priority 3
 # -------------------- sec
 snippet sec "\section" bA
 \\section{$1}$0
 endsnippet
 
+priority 3
 # -------------------- sec*
 snippet Sec "\section*" bA
 \\section*{$1}$0
 endsnippet
 
+priority 6
 # -------------------- subsec
 snippet subsec "\subsection" bA
 \\subsection{$1}$0
 endsnippet
 
+priority 6
 # -------------------- subsec*
 snippet Subsec "\subsection*" bA
 \\subsection*{$1}$0
 endsnippet
 
+priority 9
 # -------------------- subsubsec
 snippet subsubsec "\subsubsection" bA
 \\subsubsection{$1}$0
 endsnippet
 
+priority 9
 # -------------------- subsubsec*
 snippet Subsubsec "\subsubsection*" bA
 \\subsubsection*{$1}$0
 endsnippet
 
+priority 10
 # -------------------- setcounter
 snippet setcounter "\setcounter" bA
 \\setcounter{$1}{$2}$0
 endsnippet
 
+priority 5
 # -------------------- begin
 snippet begin "\begin \end" w
 \\begin{$1}
@@ -84,6 +97,7 @@ snippet begin "\begin \end" w
 \\end{$1}$0
 endsnippet
 
+priority 5
 # -------------------- frame
 snippet frame "frame" bA
 \\begin{frame}{$1}
@@ -91,16 +105,19 @@ snippet frame "frame" bA
 \\end{frame}$0
 endsnippet
 
+priority 6
 # -------------------- center
 snippet center "\centering" i
 \\centering$0
 endsnippet
 
+priority 6
 # -------------------- vspace
 snippet vspace "\vspace" i
 \\vspace{$1}$0
 endsnippet
 
+priority 6
 # -------------------- adjustwidth
 snippet awidth "adjustwidth" bA
 \\begin{adjustwidth}{${1:2em}}{${2:0pt}}
@@ -108,6 +125,7 @@ snippet awidth "adjustwidth" bA
 \\end{adjustwidth}$0
 endsnippet
 
+priority 11
 # -------------------- adjustwidth
 snippet adjustwidth "adjustwidth" bA
 \\begin{adjustwidth}{${1:2em}}{${2:0pt}}
@@ -115,6 +133,7 @@ snippet adjustwidth "adjustwidth" bA
 \\end{adjustwidth}$0
 endsnippet
 
+priority 3
 # -------------------- tab
 snippet tab "adjustwidth" b
 \\begin{adjustwidth}{2em}{0pt}
@@ -122,6 +141,7 @@ snippet tab "adjustwidth" b
 \\end{adjustwidth}$0
 endsnippet
 
+priority 8
 # -------------------- noindent
 snippet noindent "noindent" b
 \\noindent $0
@@ -131,6 +151,7 @@ endsnippet
 # Figures, images, visuals
 # ---------------------------------------
 
+priority 3
 # -------------------- fig
 snippet fig "figure" bA
 \\begin{figure}[H]
@@ -139,6 +160,7 @@ snippet fig "figure" bA
 \\end{figure}$0
 endsnippet
 
+priority 3
 # -------------------- Fig
 snippet Fig "Figure" bA
 \\begin{figure}[H]
@@ -149,6 +171,7 @@ snippet Fig "Figure" bA
 \\end{figure}$0
 endsnippet
 
+priority 3
 # -------------------- img
 snippet img "\figure with img" bA
 \\begin{figure}[H]
@@ -157,6 +180,7 @@ snippet img "\figure with img" bA
 \\end{figure}$0
 endsnippet
 
+priority 3
 # -------------------- Img
 snippet Img "\figure with Img" bA
 \\begin{figure}[H]
@@ -167,6 +191,7 @@ snippet Img "\figure with Img" bA
 \\end{figure}$0
 endsnippet
 
+priority 5
 # -------------------- graph
 snippet graph "plot" bA
 \begin{figure}[H]
@@ -186,6 +211,7 @@ snippet graph "plot" bA
 \end{figure}$0
 endsnippet
 
+priority 4
 # -------------------- graph
 snippet plot "plot" bA
 \begin{figure}[H]
@@ -205,6 +231,7 @@ snippet plot "plot" bA
 \end{figure}$0
 endsnippet
 
+priority 7
 # -------------------- addplot
 snippet addplot "addplot" bA
 \addplot [
@@ -215,6 +242,7 @@ snippet addplot "addplot" bA
 {$2};$0
 endsnippet
 
+priority 4
 # -------------------- tikz
 snippet tikz "tikzpicture" bA
 \\begin{figure}[H]
@@ -225,16 +253,19 @@ snippet tikz "tikzpicture" bA
 \end{figure}
 endsnippet
 
+priority 5
 # -------------------- tnode
 snippet tnode "tikz regular node" b
 \\node ($1) at ($2) {$$3$};$0
 endsnippet
 
+priority 6
 # -------------------- tsnode
 snippet tsnode "tikz state node" b
 \\node[${1:state}] ($2) at ($3) {$$4$};$0
 endsnippet
 
+priority 5
 # -------------------- tikzdraw
 snippet tdraw "tdraw" b
 \\draw[$1]
@@ -242,20 +273,24 @@ snippet tdraw "tdraw" b
 ;$0
 endsnippet
 
+priority 5
 # -------------------- tline
 snippet tline "tline" w
 ($1) -- ($2)$0
 endsnippet
 
+priority 6
 # -------------------- tarrow
 snippet tarrow "tarrow" w
 \\draw[->, auto] ($1) -- ($2) node[midway,$3] {$4};$0
 endsnippet
 
+priority 5
 snippet tcirc "tcirc" w
 \\draw[black,fill=black] ($1) circle (0.05) node[anchor=south east] {$2};$0
 endsnippet
 
+priority 7
 # -------------------- tsarrow
 snippet tsarrow "tikz state arrow" b
 ($1) edge[$2] node[${3:in place}] {$$4$} ($5)$0
@@ -265,51 +300,55 @@ endsnippet
 # Math mode
 # ---------------------------------------
 
+priority 3
 # -------------------- qed
 snippet qed "qed" i
 \\hfill\\qedsymbol$0
 endsnippet
 
+priority 7
 # -------------------- qedhere
 snippet qedhere "qedhere" i
 \\qedhere $0
 endsnippet
 
+priority 2
 # -------------------- math mode
 snippet mm "math mode" i
 $$1$$0
 endsnippet
 
+priority 3
 # -------------------- pow
 snippet pow "pow" i
 ^{$1}$0
 endsnippet
 
+priority 3
 # -------------------- sub
 snippet sub "sub" i
 _{$1}$0
 endsnippet
 
-# -------------------- star
-snippet star "star" i
-^*$0
-endsnippet
-
+priority 2
 # -------------------- quick braces
 snippet br "quick braces" i
 \\{$1\\}$0
 endsnippet
 
+priority 2
 # -------------------- quick braces
 snippet Br "quick braces" i
 {$1}$0
 endsnippet
 
+priority 2
 # -------------------- quick brackets
 snippet bt "quick brackets" i
 [$1]$0
 endsnippet
 
+priority 6
 # -------------------- gather
 snippet gather "gather*" bA
 \\begin{gather*}
@@ -317,6 +356,7 @@ snippet gather "gather*" bA
 \\end{gather*}$0
 endsnippet
 
+priority 5
 # -------------------- align
 snippet align "align*" bA
 \\begin{align*}
@@ -324,6 +364,7 @@ snippet align "align*" bA
 \\end{align*}$0
 endsnippet
 
+priority 5
 # -------------------- cases
 snippet cases "cases" w
 \\begin{cases}
@@ -331,6 +372,7 @@ snippet cases "cases" w
 \\end{cases}$0
 endsnippet
 
+priority 7
 # -------------------- theorem
 snippet theorem "theorem" w
 \\begin{theorem}
@@ -338,13 +380,15 @@ $1
 \\end{theorem}$0
 endsnippet
 
-# -------------------- theorem
-snippet theorem* "theorem*" w
+priority 7
+# -------------------- Theorem
+snippet Theorem "Theorem" w
 \\begin{theorem*}
 $1
 \\end{theorem*}$0
 endsnippet
 
+priority 5
 # -------------------- lemma
 snippet lemma "lemma" w
 \\begin{lemma}
@@ -352,13 +396,15 @@ $1
 \\end{lemma}$0
 endsnippet
 
-# -------------------- lemma
-snippet lemma* "lemma*" w
+priority 5
+# -------------------- Lemma
+snippet Lemma "Lemma" w
 \\begin{lemma*}
 $1
 \\end{lemma*}$0
 endsnippet
 
+priority 10
 # -------------------- definition
 snippet definition "definition" w
 \\begin{definition}
@@ -366,13 +412,15 @@ $1
 \\end{definition}$0
 endsnippet
 
-# -------------------- definition
-snippet definition* "definition*" w
+priority 10
+# -------------------- Definition
+snippet Definition "Definition" w
 \\begin{definition*}
 $1
 \\end{definition*}$0
 endsnippet
 
+priority 5
 # -------------------- claim
 snippet claim "claim" w
 \\begin{claim}
@@ -380,13 +428,15 @@ $1
 \\end{claim}$0
 endsnippet
 
+priority 5
 # -------------------- claim
-snippet claim* "claim*" w
+snippet Claim "Claim" w
 \\begin{claim*}
 $1
 \\end{claim*}$0
 endsnippet
 
+priority 5
 # -------------------- proof
 snippet proof "proof" w
 \\begin{proof}
@@ -394,263 +444,309 @@ $1
 \\end{proof}$0
 endsnippet
 
+priority 4
 # -------------------- frac
 snippet frac "\frac" i
 \\frac{$1}{$2}$0
 endsnippet
 
-# -------------------- frac
-snippet \frac "\frac" iA
-\\frac{$1}{$2}$0
-endsnippet
-
+priority 4
 # -------------------- sqrt
 snippet sqrt "\sqrt" i
 \\sqrt{$1}$0
 endsnippet
 
-# -------------------- sqrt
-snippet \sqrt "\sqrt" iA
-\\sqrt{$1}$0
-endsnippet
-
+priority 3
 # -------------------- log
 snippet log "\log" i
 \\log{$1}$0
 endsnippet
 
+priority 4
 # -------------------- log_
 snippet log_ "\log_" i
 \\log_{$1}{$2}$0
 endsnippet
 
+priority 2
 # -------------------- ln
 snippet ln "\ln" w
 \\ln{$1}$0
 endsnippet
 
+priority 2
 # -------------------- diff
 snippet diff "\diff" i
 \\diff $0
 endsnippet
 
-# -------------------- 
+priority 3
+# -------------------- int
 snippet int "\int" i
 \\int_{$1}^{$2}$0
 endsnippet
 
+priority 3
 # -------------------- leq
 snippet leq "\leq" i
 \\leq $0
 endsnippet
 
+priority 3
 # -------------------- geq
 snippet geq "\geq" i
 \\geq $0
 endsnippet
 
+priority 3
 # -------------------- neq
 snippet neq "\neq" i
 \\neq $0
 endsnippet
 
+priority 6
 # -------------------- approx
 snippet approx "\approx" i
 \\approx $0
 endsnippet
 
+priority 3
 # -------------------- cap
 snippet cap "cap" i
 \\cap $0
 endsnippet
 
+priority 3
 # -------------------- cup
 snippet cup "cup" i
 \\cup $0
 endsnippet
 
+priority 6
 # -------------------- subseteq
 snippet subset "subseteq" i
 \\subseteq $0
 endsnippet
 
+priority 3
 # -------------------- neg
 snippet neg "neg" i
 \\neg $0
 endsnippet
 
+priority 4
 # -------------------- land
 snippet land "land" i
 \\land $0
 endsnippet
 
+priority 3
 # -------------------- lor
 snippet lor "lor" i
 \\lor $0
 endsnippet
 
+priority 2
 # -------------------- pr
 snippet pr "\Pr" i
 \\Pr\\parentheses{$1}$0
 endsnippet
 
+priority 5
 # -------------------- parentheses
 snippet paren "\parentheses" i
 \\parentheses{$1}$0
 endsnippet
 
+priority 6
 # -------------------- braces
 snippet braces "\braces" i
 \\braces{$1}$0
 endsnippet
 
+priority 8
 # -------------------- brackets
 snippet brackets "\brackets" i
 \\brackets{$1}$0
 endsnippet
 
+priority 4
 # -------------------- cdot
 snippet cdot "\cdot" i
 \\cdot $0
 endsnippet
 
+priority 5
 # -------------------- times
 snippet times "\times" i
 \\times $0
 endsnippet
 
+priority 6
 # -------------------- exists
 snippet exists "\exists" i
 \\exists $0
 endsnippet
 
+priority 6
 # -------------------- forall
 snippet forall "\forall" i
 \\forall $0
 endsnippet
 
+priority 7
 # -------------------- implies
 snippet implies "\implies" i
 \\implies $0
 endsnippet
 
+priority 3
 # -------------------- if and only if
-snippet ifaf "\iff" i
+snippet iff "\iff" i
 \\iff $0
 endsnippet
 
+priority 4
 # -------------------- dots
 snippet dots "\dots" i
 \\dots $0
 endsnippet
 
+priority 2
 # -------------------- SI
 snippet Si "\Si" w
 \\SI{$1}{$2}$0
 endsnippet
 
+priority 2
 # -------------------- si
 snippet si "\si" w
 \\si{$1}$0
 endsnippet
 
+priority 2
 # -------------------- ce
 snippet ce "\ce" w
 \\ce{$1}$0
 endsnippet
 
+priority 5
 # -------------------- binom
 snippet binom "\binom" w
 \\binom{$1}{$2}$0
 endsnippet
 
+priority 5
 # -------------------- sum
 snippet sum "\sum" w
 \\sum_{$1}^{$2} $0
 endsnippet
 
+priority 4
+# -------------------- prod
+snippet prod "\prod" w
+\\prod_{$1}^{$2} $0
+endsnippet
+
+priority 3
 # -------------------- lim
 snippet lim "\lim" w
 \\lim_{$1}$0
 endsnippet
 
+priority 3
 # -------------------- max
 snippet max "\max" w
 \\max_{$1} $0
 endsnippet
 
+priority 3
 # -------------------- min
 snippet min "\min" w
 \\min_{$1} $0
 endsnippet
 
+priority 1
 # -------------------- E
 snippet e "\E" w
 \\E\\parentheses{$1}$0
 endsnippet
 
+priority 3
 # -------------------- var
 snippet var "\Var" w
 \\Var\\parentheses{$1}$0
 endsnippet
 
+priority 3
 # -------------------- cov
 snippet cov "\Cov" w
 \\Cov\\parentheses{$1}$0
 endsnippet
 
+priority 3
 # -------------------- erf
 snippet erf "\Erf" w
 \\Erf\\parentheses{$1}$0
 endsnippet
 
+priority 10
 # -------------------- underbrace
 snippet underbrace "\underbrace" i
 \\underbrace{$1}_{$2}$0
 endsnippet
 
+priority 9
+# -------------------- overbrace
+snippet overbrace "\overbrace" i
+\\overbrace{$1}_{$2}$0
+endsnippet
+
+priority 5
 # -------------------- fdiff
-snippet fdiff "\fdiff" A
+snippet fdiff "\fdiff" i
 \\fdiff{$1}{$2}$0
 endsnippet
 
+priority 3
 # -------------------- bar
 snippet bar "\bar" i
 \\bar{$1}$0
 endsnippet
 
-# -------------------- bar
-snippet \bar "\bar" iA
-\\bar{$1}$0
-endsnippet
-
+priority 3
 # -------------------- hat
 snippet hat "hat" i
 \\hat{$1}$0
 endsnippet
 
+priority 6
 # -------------------- langle
 snippet langle "\langle" i
 \\langle $0
 endsnippet
 
+priority 6
 # -------------------- rangle
 snippet rangle "\rangle" i
 \\rangle $0
 endsnippet
 
+priority 6
 # -------------------- angles
 snippet angles "langle and rangle" i
 \\langle $1 \\rangle$0
 endsnippet
 
+priority 2
 # -------------------- in
-snippet in "\in" w
+snippet in "\in" i
 \\in $0
 endsnippet
 
+priority 2
 # -------------------- suchthat
-snippet st "\suchthat" w
+snippet st "\suchthat" i
 \\suchthat $0
 endsnippet
 
@@ -658,13 +754,15 @@ endsnippet
 # Matrices
 # ---------------------------------------
 
+priority 6
 # -------------------- matrix
-snippet nmatrix "\matrix" w
+snippet matrix "\matrix" w
 \\begin{matrix}
 	$1
 \\end{matrix}
 endsnippet
 
+priority 7
 # -------------------- pmatrix
 snippet pmatrix "\pmatrix" w
 \\begin{pmatrix}
@@ -672,6 +770,7 @@ snippet pmatrix "\pmatrix" w
 \\end{pmatrix}
 endsnippet
 
+priority 7
 # -------------------- bmatrix
 snippet bmatrix "\bmatrix" w
 \\begin{bmatrix}
@@ -679,6 +778,7 @@ snippet bmatrix "\bmatrix" w
 \\end{bmatrix}
 endsnippet
 
+priority 7
 # -------------------- Bmatrix
 snippet Bmatrix "\Bmatrix" w
 \\begin{Bmatrix}
@@ -686,6 +786,7 @@ snippet Bmatrix "\Bmatrix" w
 \\end{Bmatrix}
 endsnippet
 
+priority 7
 # -------------------- vmatrix
 snippet vmatrix "\vmatrix" w
 \\begin{vmatrix}
@@ -697,90 +798,126 @@ endsnippet
 # Symbols
 # ---------------------------------------
 
+priority 5
 # -------------------- alpha
 snippet alpha "\alpha" i
 \\alpha $0
 endsnippet
 
+priority 4
 # -------------------- beta
 snippet beta "\beta" i
 \\beta $0
 endsnippet
 
+priority 5
 # -------------------- delta
 snippet delta "\delta" i
 \\delta $0
 endsnippet
 
+priority 5
 # -------------------- Delta
 snippet Delta "\Delta" i
 \\Delta $0
 endsnippet
 
+priority 7
+# -------------------- varepsilon
+snippet epsilon "epsilon" i
+\\varepsilon $0
+endsnippet
+
+priority 5
 # -------------------- theta
 snippet theta "\theta" i
 \\theta $0
 endsnippet
 
+priority 5
 # -------------------- Theta
 snippet Theta "\Theta" i
 \\Theta $0
 endsnippet
 
+priority 4
+# -------------------- zeta
+snippet zeta "\zeta" i
+\\zeta $0
+endsnippet
+
+priority 3
+# -------------------- eta
+snippet eta "Description" Options
+\\eta $0
+endsnippet
+
+priority 2
 # -------------------- Pi
 snippet Pi "\Pi" i
 \\Pi $0
 endsnippet
 
+priority 2
 # -------------------- pi
 snippet pi "\pi" i
 \\pi $0
 endsnippet
 
+priority 3
 # -------------------- Phi
 snippet Phi "\Phi" i
 \\Phi $0
 endsnippet
 
+priority 3
 # -------------------- phi
 snippet phi "\phi" i
 \\phi $0
 endsnippet
 
+priority 5
 # -------------------- Omega
 snippet Omega "\Omega" i
 \\Omega $0
 endsnippet
 
+priority 5
 # -------------------- omega
 snippet omega "\omega" i
 \\omega $0
 endsnippet
 
+priority 5
 snippet nabla "\nabla" i
 \\nabla $0
 endsnippet
 
+priority 8
 # -------------------- emptyset
 snippet emptyset "emptyset" i
 \\emptyset $0
 endsnippet
 
-# -------------------- varepsilon
-snippet eps "eps" i
-\\varepsilon $0
-endsnippet
-
+priority 3
 # -------------------- del
 snippet del "del" i
 \\partial $0
 endsnippet
 
+priority 7
+# -------------------- partial
+snippet partial "partial" i
+\\partial $0
+endsnippet
+
+priority 5
 # -------------------- infty
 snippet infty "infty" i
 \\infty $0
 endsnippet
 
+priority 5
 # -------------------- toinfty
 snippet toinf "toinf" i
 \\to\\infty $0
@@ -790,6 +927,7 @@ endsnippet
 # Lists
 # ---------------------------------------
 
+priority 4
 # -------------------- itemize
 snippet item "itemize" bA
 \\begin{itemize}
@@ -797,6 +935,7 @@ snippet item "itemize" bA
 \\end{itemize}$0
 endsnippet
 
+priority 4
 # -------------------- enumerate
 snippet enum "enumerate" bA
 \\begin{enumerate}
@@ -804,6 +943,7 @@ snippet enum "enumerate" bA
 \\end{enumerate}$0
 endsnippet
 
+priority 4
 # -------------------- enumerate
 snippet Enum "enumerate" bA
 \\begin{enumerate}[$1]
@@ -811,11 +951,13 @@ snippet Enum "enumerate" bA
 \\end{enumerate}$0
 endsnippet
 
+priority 2
 # -------------------- item
 snippet ii "\item" bA
 \\item $0
 endsnippet
 
+priority 2
 # -------------------- item[]
 snippet Ii "\item[]" bA
 \\item[$1] $0
@@ -825,6 +967,7 @@ endsnippet
 # Tables, columns, and rows
 # ---------------------------------------
 
+priority 9
 # -------------------- multicols
 snippet multicols "multicols" bA
 \\begin{multicols}{$1}
@@ -836,71 +979,73 @@ endsnippet
 # Text formatting
 # ---------------------------------------
 
+priority 4
 # -------------------- text
 snippet text "\text" i
 \\text{$1}$0
 endsnippet
 
+priority 2
 # -------------------- text
 snippet tt "\text" i
 \\text{$1}$0
 endsnippet
 
+priority 2
 # -------------------- bf
 snippet bf "\bold" i
 \\textbf{$1}$0
 endsnippet
 
+priority 3
 # -------------------- bfm
 snippet bfm "\mathbf" i
 \\mathbf{$1}$0
 endsnippet
 
-# -------------------- bb
-snippet bb "\mathbb" i
+priority 3
+# -------------------- bbm
+snippet bbm "\mathbb" i
 \\mathbb{$1}$0
 endsnippet
 
-# -------------------- cal
-snippet cal "\mathcal" i
+priority 4
+# -------------------- calm
+snippet calm "\mathcal" i
 \\mathcal{$1}$0
 endsnippet
 
+priority 2
 # -------------------- it
 snippet it "\italics" i
 \\textit{$1}$0
 endsnippet
 
+priority 7
 # -------------------- enquote
 snippet enquote "enquote" i
 \\enquote{$1}$0
 endsnippet
 
+priority 3
 # -------------------- enquote
 snippet enq "enquote" i
 \\enquote{$1}$0
 endsnippet
 
+priority 4
 # -------------------- sout
 snippet sout "strikeout" i
 \\sout{$1}$0
 endsnippet
 
-# -------------------- mathbb
-snippet mathbb "\mathbb" i
-\\mathbb{$1}$0
-endsnippet
-
-# -------------------- mathcal
-snippet mathcal "\mathcal" i
-\\mathcal{$1}$0
-endsnippet
-
+priority 3
 # -------------------- lstinline
 snippet lst "lst" i
 \lstinline{$1}$0
 endsnippet
 
+priority 3
 # -------------------- lstlisting
 snippet lst "lstlisting" bA
 \begin{lstlisting}[language = $1]
@@ -908,6 +1053,7 @@ $0
 \end{lstlisting}
 endsnippet
 
+priority 5
 # -------------------- 
 snippet latex "latex" i
 \\LaTeX $0
@@ -917,26 +1063,31 @@ endsnippet
 # References and labels
 # ---------------------------------------
 
+priority 3
 # -------------------- ref
 snippet ref "\ref" w
 \\ref{$1}$0
 endsnippet
 
+priority 7
 # -------------------- nameref
 snippet nameref "\nameref" w
 \\nameref{$1}$0
 endsnippet
 
+priority 5
 # -------------------- label
 snippet label "\label" w
 \\label{$1}$0
 endsnippet
 
+priority 8
 # -------------------- footnote
 snippet footnote "\footnote" i
 \\footnote{$1}$0
 endsnippet
 
+priority 3
 # -------------------- url
 snippet url "\url" i
 \\url{$1}$0
