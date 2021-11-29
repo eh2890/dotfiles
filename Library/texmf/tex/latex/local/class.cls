@@ -76,10 +76,11 @@
 \newcommand*\widefbox[1]{\fbox{\hspace{2em}#1\hspace{2em}}}
 \newcommand{\independent}{\mathrel{\text{\scalebox{1.07}{$\perp\mkern-10mu\perp$}}}}
 \newcommand{\dgr}{^\circ}
+\DeclareMathOperator\Pr{Pr}
 \DeclareMathOperator\E{E}
 \DeclareMathOperator\Var{Var}
 \DeclareMathOperator\Cov{Cov}
-\DeclareMathOperator\Erf{erf}
+\DeclareMathOperator\erf{erf}
 
 
 % Renew commands
