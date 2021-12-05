@@ -22,6 +22,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{mathrsfs}
+\usepackage{mathtools}
 \usepackage[metapost]{mfpic}
 \usepackage[version=4]{mhchem}
 \usepackage{modiagram}
@@ -36,6 +37,7 @@
 \usepackage{pgfplots}
 \usepackage{proof}
 
+\pgfplotsset{compat=newest}
 
 % TikZ library
 \tikzstyle{branch}=[fill,shape=circle,minimum size=3pt,inner sep=0pt]
@@ -50,6 +52,16 @@
 \tikzset{mux 4by2/.style={muxdemux, muxdemux def={Lh=4, NL=4, Rh=3, NB=1, w=2.5, square pins=1}}}
 \tikzset{in place/.style={auto=false, fill=white, inner sep=2pt}}
 
+\usetikzlibrary{fit}
+\newcommand{\tikzmark}[2]{\tikz[overlay,remember picture] \node (#1) {$#2$};}
+\tikzset{%
+  highlight/.style={rectangle,rounded corners,fill=red!15,
+    fill opacity=0.5,thick,inner sep=-2pt}
+}
+\newcommand{\Highlight}[3]{%
+    \tikz[overlay,remember picture]{
+    \node[highlight,fit=(#1)(#2)] (#3) {};}
+}
 
 % Page settings
 \allowdisplaybreaks
