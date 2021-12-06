@@ -302,6 +302,18 @@ snippet tsarrow "tikz state arrow" b
 ($1) edge[$2] node[${3:in place}] {$$4$} ($5)$0
 endsnippet
 
+priority 5
+# -------------------- tmark
+snippet tmark "tmark" i
+\\tikzmark{$1}{$2}$0
+endsnippet
+
+priority 5
+# -------------------- thighlight
+snippet thigh "thigh" i
+\\tikzhighlight{$1}{$2}{$3}$0
+endsnippet
+
 # ---------------------------------------
 # Math mode
 # ---------------------------------------
@@ -727,6 +739,12 @@ snippet bar "\bar" i
 endsnippet
 
 priority 3
+# -------------------- dot
+snippet dot "dot" i
+\\dot{$1}$0
+endsnippet
+
+priority 3
 # -------------------- hat
 snippet hat "hat" i
 \\hat{$1}$0
@@ -765,6 +783,12 @@ endsnippet
 # ---------------------------------------
 # Matrices
 # ---------------------------------------
+
+priority 3
+# -------------------- det
+snippet det "det" i
+\\det{$1}$0
+endsnippet
 
 priority 6
 # -------------------- matrix

@@ -53,12 +53,12 @@
 \tikzset{in place/.style={auto=false, fill=white, inner sep=2pt}}
 
 \usetikzlibrary{fit}
-\newcommand{\tikzmark}[2]{\tikz[overlay,remember picture] \node (#1) {$#2$};}
+\newcommand{\tikzmark}[2]{\tikz[overlay,remember picture] \node[anchor=base] (#1) {$#2$};}
 \tikzset{%
   highlight/.style={rectangle,rounded corners,fill=red!15,
     fill opacity=0.5,thick,inner sep=-2pt}
 }
-\newcommand{\Highlight}[3]{%
+\newcommand{\tikzhighlight}[3]{%
     \tikz[overlay,remember picture]{
     \node[highlight,fit=(#1)(#2)] (#3) {};}
 }
@@ -92,6 +92,7 @@
 \DeclareMathOperator\Var{Var}
 \DeclareMathOperator\Cov{Cov}
 \DeclareMathOperator\erf{erf}
+\DeclareMathOperator{\atantwo}{atan2}
 
 
 % Renew commands
