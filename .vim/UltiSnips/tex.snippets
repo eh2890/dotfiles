@@ -285,6 +285,12 @@ snippet tline "tline" w
 ($1) -- ($2)$0
 endsnippet
 
+priority 4
+# -------------------- tarc
+snippet tarc "tarc" i
+($1) arc ($2:$3:$4)$0
+endsnippet
+
 priority 6
 # -------------------- tarrow
 snippet tarrow "tarrow" w
@@ -311,7 +317,7 @@ endsnippet
 priority 5
 # -------------------- thighlight
 snippet thigh "thigh" i
-\\tikzhighlight{$1}{$2}{$3}$0
+\\tikzhighlight{$1}{$2}{$3}{$4}$0
 endsnippet
 
 # ---------------------------------------
@@ -490,6 +496,66 @@ priority 2
 # -------------------- ln
 snippet ln "\ln" w
 \\ln{$1}$0
+endsnippet
+
+priority 3
+# -------------------- sin
+snippet sin "\sin" i
+\\sin{$1}$0
+endsnippet
+
+priority 3
+# -------------------- Sin
+snippet Sin "\sin()" i
+\\sin{\parentheses{$1}}$0
+endsnippet
+
+priority 3
+# -------------------- cos
+snippet cos "\cos" i
+\\cos{$1}$0
+endsnippet
+
+priority 3
+# -------------------- Cos
+snippet Cos "\cos()" i
+\\cos{\parentheses{$1}}$0
+endsnippet
+
+priority 4
+# -------------------- asin
+snippet asin "\asin" i
+\\asin{$1}$0
+endsnippet
+
+priority 4
+# -------------------- Asin
+snippet Asin "\asin()" i
+\\asin{\parentheses{$1}}$0
+endsnippet
+
+priority 4
+# -------------------- acos
+snippet acos "\acos" i
+\\acos{$1}$0
+endsnippet
+
+priority 4
+# -------------------- Acos
+snippet Acos "\acos()" i
+\\acos{\parentheses{$1}}$0
+endsnippet
+
+priority 5
+# -------------------- atan2
+snippet atan2 "\atantwo" i
+\\atantwo{$1}$0
+endsnippet
+
+priority 5
+# -------------------- Atan2
+snippet Atan2 "\atantwo" i
+\\atantwo{\parentheses{$1}}$0
 endsnippet
 
 priority 4
@@ -776,7 +842,7 @@ endsnippet
 
 priority 2
 # -------------------- suchthat
-snippet st "\suchthat" i
+snippet st "\suchthat" w
 \\suchthat $0
 endsnippet
 
@@ -946,6 +1012,12 @@ priority 3
 # -------------------- phi
 snippet phi "\phi" i
 \\phi $0
+endsnippet
+
+priority 2
+# -------------------- xi
+snippet xi "\xi" i
+\\xi $0
 endsnippet
 
 priority 3
@@ -1121,6 +1193,18 @@ priority 4
 # -------------------- sout
 snippet sout "strikeout" i
 \\sout{$1}$0
+endsnippet
+
+priority 4
+# -------------------- phan
+snippet phan "phantom" i
+\\phantom{$1}$0
+endsnippet
+
+priority 7
+# -------------------- phantom
+snippet phantom "phantom" i
+\\phantom{$1}$0
 endsnippet
 
 priority 3

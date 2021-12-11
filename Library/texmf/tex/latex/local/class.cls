@@ -54,13 +54,10 @@
 
 \usetikzlibrary{fit}
 \newcommand{\tikzmark}[2]{\tikz[overlay,remember picture] \node[anchor=base] (#1) {$#2$};}
-\tikzset{%
-  highlight/.style={rectangle,rounded corners,fill=red!15,
-    fill opacity=0.5,thick,inner sep=-2pt}
-}
-\newcommand{\tikzhighlight}[3]{%
+\newcommand{\tikzhighlight}[4]{%
     \tikz[overlay,remember picture]{
-    \node[highlight,fit=(#1)(#2)] (#3) {};}
+    \node[rectangle,rounded corners,fill=#4!15,
+    fill opacity=0.5,thick,inner sep=-2pt,fit=(#1)(#2)] (#3) {};}
 }
 
 % Page settings
@@ -92,6 +89,9 @@
 \DeclareMathOperator\Var{Var}
 \DeclareMathOperator\Cov{Cov}
 \DeclareMathOperator\erf{erf}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\asin}{asin}
+\DeclareMathOperator{\acos}{acos}
 \DeclareMathOperator{\atantwo}{atan2}
 
 
