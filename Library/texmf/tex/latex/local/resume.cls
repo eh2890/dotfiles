@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{test}[2020/11/28 Resume class file]
+\ProvidesClass{resume}[2020/11/28 Resume class file]
 \nofiles
 \LoadClass{article}
 
@@ -17,16 +17,14 @@
 \usepackage{float}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
-
 \hypersetup{
 	colorlinks=false,
 	linkcolor=black,
 	filecolor=black,      
 	urlcolor=black,
 }
-
-
 \renewcommand\labelitemi{$\cdot$}
+
 
 % Header
 \newcommand{\name}[1]{
@@ -44,15 +42,6 @@
     \vspace{-0.5em}
 }
 
-\newcommand\links[3]{
-    \centerline{
-        \makebox[0pt][c]{
-            #1 $\vert$ #2 $\vert$ #3
-        }
-    }
-    \vspace{-0.75em}
-}
-
 
 % Ressection
 \RequirePackage{titlesec}
@@ -61,7 +50,6 @@
 	{}{0em}
 	{}
 
-
 \newcommand{\ressection}[1]{
 	\section{#1}
 	\vspace{-1em}
@@ -69,7 +57,7 @@
 	\vspace{1em}
 }
 
-% Ressubsection(*)
+% Ressubsection
 \newenvironment{ressubenvironment}{
 	\begin{adjustwidth}{}{}
 }{
@@ -79,12 +67,8 @@
 	{\raggedright}
 	{}{0em}
 	{}
-
-\makeatletter
-\newcommand{\ressubsection}{\@ifstar\ressubsectionnocomma\ressubsectioncomma}
-\makeatother
-  
-\newcommand{\ressubsectioncomma}[5]{
+	
+\newcommand{\ressubsection}[5]{
 	\begin{ressubenvironment}
 	\subsection[#1]{\textbf{#1}\hfill#2\\ \textit{#3} \hfill \textit{#4}}
 	\vspace{-0.5em}
@@ -93,34 +77,25 @@
 	\vspace{-1.5em}
 }
 
-\newcommand{\ressubsectionnocomma}[4]{
-	\begin{ressubenvironment}
-	\subsection[#1]{\textbf{#1} #2 \hfill #3}
-	\vspace{-0.67em}
-	#4
-	\end{ressubenvironment}
-	\vspace{-1.5em}
+
+% Award
+\newcommand{\award}[2]{
+    \textbf{#1}\hfill#2\\
 }
 
-\newcommand{\newressubsection}[4]{
-	\begin{ressubenvironment}
-	\subsection[#1]{\textbf{#1}, #2\hfill #3\\}
-	\vspace{-1.75em}
-	#4
-	\end{ressubenvironment}
-	\vspace{-1.5em}
+
+% Publication
+\newcommand{\publication}[2]{
+    #1\hfill#2\\
 }
 
-\newcommand{\courses}[2]{
-    \begin{ressubenvironment}
-    \subsection[#1]{\textbf{#1}}
-    \vspace{-0.67em}
-    #2
-	\end{ressubenvironment}
-	\vspace{-1.5em}
-}
 
-\newcommand{\project}[4]{
+% Project
+\makeatletter
+\newcommand{\project}{\@ifstar\projectstar\projectnostar}
+\makeatother
+
+\newcommand{\projectnostar}[4]{
 	\begin{ressubenvironment}
 	\subsection[#1]{\textbf{#1} | #2 \hfill #3}
 	\vspace{-0.67em}
@@ -129,20 +104,27 @@
 	\vspace{-1.5em}
 }
 
-\newcommand{\indentedtextsection}[1]{
-	\vspace{-1.25em}
+
+% Project*
+\newcommand{\projectstar}[3]{
+	\begin{ressubenvironment}
+	\subsection[#1]{\textbf{#1} \hfill #2}
+	\vspace{-0.67em}
+	#3
+	\end{ressubenvironment}
+	\vspace{-1.5em}
+}
+
+
+% Skills
+\newcommand{\skills}[1]{
+	\vspace{-0.25em}
 	\begin{ressubenvironment}
 	#1
 	\end{ressubenvironment}
 	\vspace{-1.5em}
 }
 
-\newcommand{\award}[2]{
-	\textbf{#1}\hfill#2
-	\vspace{-1.5em}
+\newcommand{\skill}[2]{
+    \textbf{#1}: #2
 }
-
-
-
-
-
