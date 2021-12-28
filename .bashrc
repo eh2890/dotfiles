@@ -122,6 +122,7 @@ alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
 alias skim='open -a Skim.app'
 alias preview='open -a Preview'
 alias haskell='stack --resolver lts-18.14 ghci'
+alias cserver='ssh ubuntu@ec2-18-220-151-196.us-east-2.compute.amazonaws.com'
 
 # setting up icloud path
 shopt -s cdable_vars
