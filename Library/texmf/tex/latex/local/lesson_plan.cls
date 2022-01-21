@@ -53,6 +53,7 @@
 \newcommand{\inv}{^{-1}}
 \newcommand*\widefbox[1]{\fbox{\hspace{2em}#1\hspace{2em}}}
 \newcommand{\independent}{\mathrel{\text{\scalebox{1.07}{$\perp\mkern-10mu\perp$}}}}
+\newcommand{\dgr}{^\circ}
 
 
 % Si Units settings
