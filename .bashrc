@@ -118,10 +118,19 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+# personal aliases
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
 alias skim='open -a Skim.app'
 alias preview='open -a Preview'
 alias haskell='stack --resolver lts-18.14 ghci'
+
+# current course webpage aliases
+alias c1='open https://docs.google.com/document/d/1pYQT49qK_zi2qa0j9mikIpKtfCTYglOe3OwI6BPE8vY/edit'
+alias c2='open http://www.math.columbia.edu/~bayer/S22/Combinatorics/'
+alias c3='open https://w4111.github.io/'
+alias c4='open http://www.cs.columbia.edu/~jae/4118/?asof=20220119'
+alias c5='open http://www.cs.columbia.edu/~xichen/algorithm/'
 
 # setting up icloud path
 shopt -s cdable_vars
