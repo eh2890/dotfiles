@@ -131,6 +131,9 @@ alias c2='open http://www.math.columbia.edu/~bayer/S22/Combinatorics/'
 alias c3='open https://w4111.github.io/'
 alias c4='open http://www.cs.columbia.edu/~jae/4118/?asof=20220119'
 alias c5='open http://www.cs.columbia.edu/~xichen/algorithm/'
+alias apue='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/OS/APUE.pdf'
+alias ostep='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/OS/OSTEP.pdf'
+alias lkd='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/OS/LKD.pdf'
 
 # setting up icloud path
 shopt -s cdable_vars
