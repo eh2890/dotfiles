@@ -18,7 +18,7 @@
 \usepackage{float}
 \usepackage{framed}
 \usepackage{listings}
-\usepackage[margin=1.5in]{geometry}
+\usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{mathrsfs}
