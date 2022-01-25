@@ -32,6 +32,7 @@
 \usepackage{setspace}
 \usepackage{subcaption}
 \usepackage[binary-units]{siunitx}
+\usepackage{tcolorbox}
 \usepackage{tikz}
 \usepackage[normalem]{ulem}
 \usepackage{pgfplots}

@@ -320,6 +320,28 @@ snippet thigh "thigh" i
 \\tikzhighlight{$1}{$2}{$3}{$4}$0
 endsnippet
 
+priority 3
+# -------------------- tcb
+snippet tcb "tcb" i
+\\begin{tcolorbox}
+	$1
+\\end{tcolorbox}$0
+endsnippet
+
+priority 3
+# -------------------- Tcb
+snippet Tcb "Tcb" i
+\\begin{tcolorbox}[title={$1}]
+	$2
+\\end{tcolorbox}$0
+endsnippet
+
+priority 6
+# -------------------- tcbset
+snippet tcbset "tcbset" i
+\\tcbset{colback=$1!5, colframe=$1!75!black}
+endsnippet
+
 # ---------------------------------------
 # Math mode
 # ---------------------------------------
