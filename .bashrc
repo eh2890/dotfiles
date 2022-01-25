@@ -137,6 +137,9 @@ alias ostep='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/
 alias lkd='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/OS/LKD.pdf'
 alias clrs='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/Textbooks/CS/CLRS.pdf'
 
+# website aliases
+alias gmail='open https://mail.google.com/mail/u/0/#inbox'
+
 # setting up icloud path
 shopt -s cdable_vars
 export icloud=$HOME/Library/Mobile\ Documents/com~apple~CloudDocs/
