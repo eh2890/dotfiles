@@ -135,6 +135,7 @@ alias a1='cd /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/Columbia
 alias apue='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/OS/APUE.pdf'
 alias ostep='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/OS/OSTEP.pdf'
 alias lkd='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/OS/LKD.pdf'
+alias clrs='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/Textbooks/CS/CLRS.pdf'
 
 # setting up icloud path
 shopt -s cdable_vars
