@@ -1,5 +1,7 @@
 \LoadClass{article}
 \usepackage[utf8]{inputenc}
+\usepackage[noend]{algcompatible}
+\usepackage{algorithm}
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amssymb}
