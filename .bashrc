@@ -129,16 +129,14 @@ alias haskell='stack --resolver lts-18.14 ghci'
 alias c1='open https://docs.google.com/document/d/1pYQT49qK_zi2qa0j9mikIpKtfCTYglOe3OwI6BPE8vY/edit'
 alias c2='open http://www.math.columbia.edu/~bayer/S22/Combinatorics/'
 alias c3='open https://w4111.github.io/'
-alias c4='open http://www.cs.columbia.edu/~jae/4118/'
+alias c4='open http://www.cs.columbia.edu/~jae/4118/?asof=20220119'
 alias c5='open http://www.cs.columbia.edu/~xichen/algorithm/'
+alias o1='cd /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/3827_S_2022/Office_Hours/Slides'
 alias a1='cd /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/Columbia/1123/Assignments'
 alias apue='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/OS/APUE.pdf'
 alias ostep='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/OS/OSTEP.pdf'
 alias lkd='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/OS/LKD.pdf'
 alias clrs='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/Textbooks/CS/CLRS.pdf'
-
-# website aliases
-alias gmail='open https://mail.google.com/mail/u/0/#inbox'
 
 # setting up icloud path
 shopt -s cdable_vars
