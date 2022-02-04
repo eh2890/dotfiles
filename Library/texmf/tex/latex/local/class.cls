@@ -23,6 +23,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{karnaugh-map}
 \usepackage{mathrsfs}
 \usepackage{mathtools}
 \usepackage[metapost]{mfpic}
