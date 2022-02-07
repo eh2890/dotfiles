@@ -124,6 +124,7 @@ alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
 alias skim='open -a Skim.app'
 alias preview='open -a Preview'
 alias haskell='stack --resolver lts-18.14 ghci'
+alias resume='cd /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/Resumes'
 
 # current course webpage aliases
 alias c1='open https://docs.google.com/document/d/1pYQT49qK_zi2qa0j9mikIpKtfCTYglOe3OwI6BPE8vY/edit'
