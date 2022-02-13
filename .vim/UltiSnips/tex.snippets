@@ -402,6 +402,14 @@ snippet bt "quick brackets" i
 [$1]$0
 endsnippet
 
+priority 2
+# -------------------- eq
+snippet eq "equation" bA
+\\begin{equation}\\label{eq:$1}
+	$2
+\\end{equation}$0
+endsnippet
+
 priority 6
 # -------------------- gather
 snippet gather "gather*" bA
@@ -530,13 +538,13 @@ endsnippet
 
 priority 2
 # -------------------- ln
-snippet ln "\ln" w
+snippet ln "\ln" i
 \\ln{$1}$0
 endsnippet
 
 priority 3
 # -------------------- dgr
-snippet dgr "\dgr" w
+snippet dgr "\dgr" i
 \\dgr $0
 endsnippet
 
