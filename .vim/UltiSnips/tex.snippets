@@ -200,6 +200,30 @@ snippet Img "\figure with Img" bA
 endsnippet
 
 priority 5
+# -------------------- table
+snippet table "table" bA
+\\begin{figure}[H]
+	\\centering
+	\\begin{tabular}{$1}
+		$2
+	\\end{tabular}
+\\end{figure}$0
+endsnippet
+
+priority 5
+# -------------------- Table
+snippet Table "Table" bA
+\\begin{figure}[H]
+	\\centering
+	\\begin{tabular}{$1}
+		$2
+	\\end{tabular}
+	\\caption{$3}
+	\\label{tab:$4}
+\\end{figure}$0
+endsnippet
+
+priority 5
 # -------------------- graph
 snippet graph "plot" bA
 \begin{figure}[H]
@@ -250,6 +274,10 @@ snippet addplot "addplot" bA
 {$2};$0
 endsnippet
 
+snippet hline "hline" i
+\\hline $0
+endsnippet
+
 priority 4
 # -------------------- tikz
 snippet tikz "tikzpicture" bA
@@ -261,30 +289,45 @@ snippet tikz "tikzpicture" bA
 \end{figure}
 endsnippet
 
+priority 7
+# -------------------- circuit
+snippet circuit "circuitikz" bA
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[circuit logic US, label distance=2mm]
+		$0
+	\end{tikzpicture}
+\end{figure}
+endsnippet
+
 priority 5
 # -------------------- tnode
 snippet tnode "tikz regular node" b
-\\node ($1) at ($2) {$$3$};$0
+\\node ($1) at ($2) {$3};$0
+endsnippet
+
+priority 5
+# -------------------- Tnode
+snippet Tnode "tikz regular node" b
+\\node[$1] ($2) at ($3) {$4};$0
 endsnippet
 
 priority 6
 # -------------------- tsnode
 snippet tsnode "tikz state node" b
-\\node[${1:state}] ($2) at ($3) {$$4$};$0
+\\node[${1:state}] ($2) at ($3) {$4};$0
 endsnippet
 
 priority 5
 # -------------------- tikzdraw
 snippet tdraw "tdraw" b
-\\draw[$1] $2;$0
+\\draw $1;$0
 endsnippet
 
 priority 5
 # -------------------- tikzdraw
 snippet Tdraw "Tdraw" b
-\\draw[$1]
-	$2
-;$0
+\\draw[$1] $2;$0
 endsnippet
 
 priority 5
@@ -698,10 +741,22 @@ snippet pr "\Pr" i
 \\Pr\\parentheses{$1}$0
 endsnippet
 
-priority 5
+priority 2
 # -------------------- parentheses
-snippet paren "\parentheses" i
-\\parentheses{$1}$0
+snippet pp "\parentheses" i
+\\left($1\\right)$0
+endsnippet
+
+priority 2
+# -------------------- brackets
+snippet bb "\brackets" i
+\\left[$1\\right]$0
+endsnippet
+
+priority 2
+# -------------------- braces
+snippet br "\braces" i
+\\left\{$1\\right\}$0
 endsnippet
 
 priority 6
@@ -890,6 +945,18 @@ snippet tilde "tilde" i
 \\tilde{$1}$0
 endsnippet
 
+priority 4
+# -------------------- ceil
+snippet ceil "ceil" i
+\\lceil $1 \\rceil $0
+endsnippet
+
+priority 5
+# -------------------- floor
+snippet floor "floor" i
+\\lfloor $1 \\rfloor $0
+endsnippet
+
 priority 6
 # -------------------- langle
 snippet langle "\langle" i
@@ -905,7 +972,7 @@ endsnippet
 priority 6
 # -------------------- angles
 snippet angles "langle and rangle" i
-\\langle $1 \\rangle$0
+\\langle $1 \\rangle $0
 endsnippet
 
 priority 2
@@ -1307,19 +1374,19 @@ endsnippet
 
 priority 3
 # -------------------- ref
-snippet ref "\ref" w
+snippet ref "\ref" i
 \\ref{$1}$0
 endsnippet
 
 priority 7
 # -------------------- nameref
-snippet nameref "\nameref" w
+snippet nameref "\nameref" i
 \\nameref{$1}$0
 endsnippet
 
 priority 5
 # -------------------- label
-snippet label "\label" w
+snippet label "\label" i
 \\label{$1}$0
 endsnippet
 
