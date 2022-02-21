@@ -204,8 +204,8 @@ priority 5
 snippet table "table" bA
 \\begin{figure}[H]
 	\\centering
-	\\begin{tabular}{$1}
-		$2
+	\\begin{tabular}{$1}$2
+		$3
 	\\end{tabular}
 \\end{figure}$0
 endsnippet
@@ -215,11 +215,11 @@ priority 5
 snippet Table "Table" bA
 \\begin{figure}[H]
 	\\centering
-	\\begin{tabular}{$1}
-		$2
+	\\begin{tabular}{$1}$2
+		$3
 	\\end{tabular}
-	\\caption{$3}
-	\\label{tab:$4}
+	\\caption{$4}
+	\\label{fig:$5}
 \\end{figure}$0
 endsnippet
 
@@ -289,6 +289,19 @@ snippet tikz "tikzpicture" bA
 \end{figure}
 endsnippet
 
+priority 4
+# -------------------- Tikz
+snippet Tikz "tikzpicture" bA
+\\begin{figure}[H]
+	\\centering
+	\\begin{tikzpicture}
+		$0
+	\\end{tikzpicture}
+	\\caption{$1}
+	\\label{fig:$2}
+\end{figure}
+endsnippet
+
 priority 7
 # -------------------- circuit
 snippet circuit "circuitikz" bA
@@ -298,6 +311,13 @@ snippet circuit "circuitikz" bA
 		$0
 	\end{tikzpicture}
 \end{figure}
+endsnippet
+
+priority 4
+# -------------------- tfor
+snippet tfor "foreach" b
+\\foreach \\$1 in {$2,...,$3}
+	$0
 endsnippet
 
 priority 5
@@ -321,19 +341,19 @@ endsnippet
 priority 5
 # -------------------- tikzdraw
 snippet tdraw "tdraw" b
-\\draw $1;$0
+\\draw ($1) -- ($2);$0
 endsnippet
 
 priority 5
 # -------------------- tikzdraw
 snippet Tdraw "Tdraw" b
-\\draw[$1] $2;$0
+\\draw[$1] ($2) -- ($3);$0
 endsnippet
 
 priority 5
-# -------------------- tline
-snippet tline "tline" w
-($1) -- ($2)$0
+# -------------------- tikzfill
+snippet tfill "tfill" b
+\\fill[$1] ($2) rectangle ($3);
 endsnippet
 
 priority 4
@@ -425,24 +445,6 @@ priority 3
 # -------------------- sub
 snippet sub "sub" i
 _{$1}$0
-endsnippet
-
-priority 2
-# -------------------- quick braces
-snippet br "quick braces" i
-\\{$1\\}$0
-endsnippet
-
-priority 2
-# -------------------- quick braces
-snippet Br "quick braces" i
-{$1}$0
-endsnippet
-
-priority 2
-# -------------------- quick brackets
-snippet bt "quick brackets" i
-[$1]$0
 endsnippet
 
 priority 2
@@ -756,19 +758,7 @@ endsnippet
 priority 2
 # -------------------- braces
 snippet br "\braces" i
-\\left\{$1\\right\}$0
-endsnippet
-
-priority 6
-# -------------------- braces
-snippet braces "\braces" i
-\\braces{$1}$0
-endsnippet
-
-priority 8
-# -------------------- brackets
-snippet brackets "\brackets" i
-\\brackets{$1}$0
+\\left\\{$1\\right\\}$0
 endsnippet
 
 priority 4
