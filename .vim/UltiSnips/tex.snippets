@@ -85,7 +85,7 @@ endsnippet
 
 priority 10
 # -------------------- setcounter
-snippet setcounter "\setcounter" bA
+snippet setcounter "\setcounter" i
 \\setcounter{$1}{$2}$0
 endsnippet
 
@@ -1390,4 +1390,13 @@ priority 3
 # -------------------- url
 snippet url "\url" i
 \\url{$1}$0
+endsnippet
+
+priority 4
+# -------------------- sqlt
+snippet sqlt "CREATE TABLE" bA
+CREATE TABLE $1 (
+	$2
+)
+$0
 endsnippet
