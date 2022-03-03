@@ -314,6 +314,15 @@ snippet circuit "circuitikz" bA
 endsnippet
 
 priority 4
+# -------------------- kmap
+snippet kmap "kmap" bA
+\begin{karnaugh-map}[4][4][1][$$1$][$$2$]
+	\manualterms{$3}
+	$4
+\end{karnaugh-map}$0
+endsnippet
+
+priority 4
 # -------------------- tfor
 snippet tfor "foreach" b
 \\foreach \\$1 in {$2,...,$3}
@@ -376,7 +385,15 @@ endsnippet
 priority 7
 # -------------------- tsarrow
 snippet tsarrow "tikz state arrow" b
-\\draw[->] ($1) edge[$2] node[${3:in place}] {$$4$} ($5);$0
+($1) edge[$2] node[${3:in place}] {$$4$} ($5)$0
+endsnippet
+
+priority 6
+# -------------------- tspath
+snippet tspath "tspath" b
+\\path[->, every arrow/.append style=-{Latex[scale=1.5]}]
+	$0
+;
 endsnippet
 
 priority 5
