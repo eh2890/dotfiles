@@ -29,7 +29,7 @@ endsnippet
 # -------------------- block
 snippet block "block and endblock" bA
 {% block ${1:content} %}
-	$2
+  $2
 {% endblock ${1/(\w+).*/$1/} %}
 $0
 endsnippet
@@ -42,9 +42,8 @@ endsnippet
 # -------------------- for loop
 snippet for "for and endfor" b
 {% for $1 in $2 %}
-	$3
-{% endfor %}
-$0
+  $3
+{% endfor %}$0
 endsnippet
 
 # -------------------- template tag
@@ -65,6 +64,6 @@ endsnippet
 # -------------------- form
 snippet form "form" b
 <form action="$1" method="$2">{% csrf_token %}
-	$0
+  $0
 </form>
 endsnippet

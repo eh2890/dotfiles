@@ -1,0 +1,15 @@
+snippet req "req" bA
+INSERT INTO PREREQUISITE_FOR VALUES ('${1:COMS}', '$2', '$3', '${4:COMS}', '$5', '$6', ${7:1});$0
+endsnippet
+
+snippet ds "ds" bA
+INSERT INTO PREREQUISITE_FOR VALUES ('${1:COMS}', '$2', '$3', 'COMS', '3134', 'Data Structures in Java', 1);
+INSERT INTO PREREQUISITE_FOR VALUES ('$1', '$2', '$3', 'COMS', '3136', 'Essential Data Structures', 1);
+INSERT INTO PREREQUISITE_FOR VALUES ('$1', '$2', '$3', 'COMS', '3137', 'Honors Data Structures and Algorithms', 1);
+endsnippet
+
+snippet intro "intro" bA
+INSERT INTO PREREQUISITE_FOR VALUES ('${1:COMS}', '$2', '$3', 'COMS', '1004', 'Intro. to CS in Java', 1);
+INSERT INTO PREREQUISITE_FOR VALUES ('$1', '$2', '$3', 'ENGI', '1006', 'Intro. to Computing in Python', 1);
+INSERT INTO PREREQUISITE_FOR VALUES ('$1', '$2', '$3', 'COMS', '1007', 'Honors Intro. to CS', 1);
+endsnippet

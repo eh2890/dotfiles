@@ -39,6 +39,13 @@ set encoding=utf8           " UTF-8 encoding
 
 filetype plugin on
 
+" automatically downloads vim-plug to your machine if not found.
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
                             " Specify a directory for plugins
 
