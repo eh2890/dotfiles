@@ -1,7 +1,6 @@
 " --------------------
 " Default Vim Settings
 " --------------------
-
 " Get the defaults that most users want.
 source $VIMRUNTIME/defaults.vim
 
@@ -31,12 +30,14 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
+" mapleader
+let mapleader = ","
+
 set encoding=utf8           " UTF-8 encoding
 
 " --------------------
 " Plugins
 " --------------------
-
 filetype plugin on
 
 " automatically downloads vim-plug to your machine if not found.
@@ -65,15 +66,67 @@ let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 let g:UltiSnipsEditSplit = 'vertical'
 
+
+" Airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline_theme='transparent'
+
+" everforest
+Plug 'sainnhe/everforest'
+
 call plug#end()             " Initialize plugin system
 
 
+" --------------------
+" Airline
+" --------------------
+let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
+let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
+let g:airline_theme = 'everforest'
+
+
+" --------------------
+" Colorscheme
+" --------------------
+set background=dark
+let g:everforest_better_performance = 1
+colorscheme everforest
+
+
+" --------------------
+" Buffer Management
+" --------------------
+set hidden " Allow buffers to be hidden if you've modified a buffer
+
+" Move to the previous buffer
+" option + n
+nmap ˜ :bprevious<CR>
+
+" Move to the next buffer
+" option + m
+nmap µ :bnext<CR>
+
+" Close the current buffer and move to the previous one
+" This replicates the idea of closing a tab
+" option + q
+nmap œ :bp <BAR> bd #<CR>
+
+" Show all open buffers and their status
+" option + b
+nmap ∫ :ls<CR>
+
+" Use arrow keys to navigate window splits
+" option + h|j|k|l
+nnoremap ˙ :wincmd h <CR>
+nnoremap ∆ :wincmd j <CR>
+nnoremap ˚ :wincmd k <CR>
+nnoremap ¬ :wincmd l <CR>
 
 
 " --------------------
 " Spaces and Tabs
 " --------------------
-
 filetype plugin indent on   " automatic filetype indenting
 syntax on                   " enable syntax processing
 set tabstop=4               " number of visual spaces per TAB
@@ -88,7 +141,6 @@ set autoindent              " auto-indenting
 " --------------------
 " UI Configuration
 " --------------------
-
 set number                  " show line numbers
 set cursorline              " highlight current line
 filetype indent on          " load filetype-specific indent files
@@ -98,10 +150,10 @@ set textwidth=0
 set scrolloff=0
 set mouse=
 
+
 " --------------------
 " Searching
 " --------------------
-
 set incsearch               " search as characters are entered
 set hlsearch                " highlight matches
 command C let @/=""
