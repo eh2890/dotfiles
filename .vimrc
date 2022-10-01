@@ -181,3 +181,4 @@ set viminfo='100,<1000,s100,h
 set backupdir^=~/.vim/.backup//
 set dir^=~/.vim/.backup//
 set undodir^=~/.vim/.backup//
+let g:python3_host_prog = "/usr/bin/python3"

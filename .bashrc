@@ -63,19 +63,16 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
+alias icloud='cd ~/icloud'
 alias skim='open -a Skim.app'
 alias preview='open -a Preview'
 alias haskell='stack --resolver lts-18.14 ghci'
-alias resume='cd /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/Resumes'
+alias resumes='cd ~/resumes'
+alias lc='cd ~/Leetcode'
 alias todo='cd /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/To_Do_List && vim To_Do_List.tex && ./export.sh && cd - &> /dev/null'
 
 alias sipser='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/Textbooks/CS/Sipser.pdf'
 alias clrs='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/Textbooks/CS/CLRS.pdf'
-
-# iCloud
-shopt -s cdable_vars
-export icloud=$HOME/Library/Mobile\ Documents/com~apple~CloudDocs/
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -85,6 +82,10 @@ export icloud=$HOME/Library/Mobile\ Documents/com~apple~CloudDocs/
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+gpp() {
+    g++ -std=c++11 -O2 -Wall $1 -o out
+}
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -96,5 +97,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export PATH=/opt/homebrew/bin:$PATH
 
 umask 077

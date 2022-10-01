@@ -91,26 +91,11 @@
 
 
 % Project
-\makeatletter
-\newcommand{\project}{\@ifstar\projectstar\projectnostar}
-\makeatother
-
-\newcommand{\projectnostar}[4]{
+\newcommand{\project}[2]{
 	\begin{ressubenvironment}
-	\subsection[#1]{\textbf{#1} | #2 \hfill #3}
+	\subsection[#1]{\textbf{#1}}
 	\vspace{-0.67em}
-	#4
-	\end{ressubenvironment}
-	\vspace{-1.5em}
-}
-
-
-% Project*
-\newcommand{\projectstar}[3]{
-	\begin{ressubenvironment}
-	\subsection[#1]{\textbf{#1} \hfill #2}
-	\vspace{-0.67em}
-	#3
+	#2
 	\end{ressubenvironment}
 	\vspace{-1.5em}
 }
