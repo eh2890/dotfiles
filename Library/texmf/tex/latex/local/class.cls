@@ -128,7 +128,7 @@
   numbers=left,
   numberstyle=\tiny\color{purple},
   keywordstyle=\color{blue},
-  commentstyle=\color{green},
+  commentstyle=\color{red},
   stringstyle=\color{purple},
   breaklines=true,
   breakatwhitespace=true,
