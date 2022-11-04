@@ -379,7 +379,7 @@ endsnippet
 
 priority 5
 snippet tcirc "tcirc" w
-\\draw[black,fill=black] ($1) circle (0.05) node[anchor=south east] {$2};$0
+\\draw[black,fill=black] ($1) circle (0.05) node {};$0
 endsnippet
 
 priority 7
@@ -1048,183 +1048,10 @@ endsnippet
 # Symbols
 # ---------------------------------------
 
-priority 5
-# -------------------- alpha
-snippet alpha "\alpha" i
-\\alpha $0
-endsnippet
-
-priority 4
-# -------------------- beta
-snippet beta "\beta" i
-\\beta $0
-endsnippet
-
-priority 5
-# -------------------- gamma
-snippet gamma "\gamma" i
-\\gamma $0
-endsnippet
-
-priority 5
-# -------------------- delta
-snippet delta "\delta" i
-\\delta $0
-endsnippet
-
-priority 5
-# -------------------- Delta
-snippet Delta "\Delta" i
-\\Delta $0
-endsnippet
-
-priority 7
-# -------------------- varepsilon
-snippet epsilon "epsilon" i
-\\varepsilon $0
-endsnippet
-
-priority 4
-# -------------------- zeta
-snippet zeta "\zeta" i
-\\zeta $0
-endsnippet
-
-priority 3
-# -------------------- eta
-snippet eta "eta" i
-\\eta $0
-endsnippet
-
-priority 5
-# -------------------- theta
-snippet theta "\theta" i
-\\theta $0
-endsnippet
-
-priority 5
-# -------------------- Theta
-snippet Theta "\Theta" i
-\\Theta $0
-endsnippet
-
-priority 6
-# -------------------- Lambda
-snippet Lambda "\Lambda" i
-\\Lambda $0
-endsnippet
-
-priority 6
-# -------------------- lambda
-snippet lambda "\lambda" i
-\\lambda $0
-endsnippet
-
-priority 2
-# -------------------- mu
-snippet mu "\mu" i
-\\mu $0
-endsnippet
-
-priority 2
-# -------------------- Pi
-snippet Pi "\Pi" i
-\\Pi $0
-endsnippet
-
-priority 2
-# -------------------- pi
-snippet pi "\pi" i
-\\pi $0
-endsnippet
-
-priority 3
-# -------------------- rho
-snippet rho "\rho" i
-\\rho $0
-endsnippet
-
-priority 5
-# -------------------- sigma
-snippet sigma "\sigma" i
-\\sigma $0
-endsnippet
-
-priority 3
-# -------------------- Phi
-snippet Phi "\Phi" i
-\\Phi $0
-endsnippet
-
-priority 3
-# -------------------- phi
-snippet phi "\phi" i
-\\phi $0
-endsnippet
-
-priority 2
-# -------------------- xi
-snippet xi "\xi" i
-\\xi $0
-endsnippet
-
-priority 3
-# -------------------- Psi
-snippet Psi "\Psi" i
-\\Psi $0
-endsnippet
-
-priority 3
-# -------------------- psi
-snippet psi "\psi" i
-\\psi $0
-endsnippet
-
-priority 5
-# -------------------- Omega
-snippet Omega "\Omega" i
-\\Omega $0
-endsnippet
-
-priority 5
-# -------------------- omega
-snippet omega "\omega" i
-\\omega $0
-endsnippet
-
-priority 5
-snippet nabla "\nabla" i
-\\nabla $0
-endsnippet
-
-priority 8
-# -------------------- emptyset
-snippet emptyset "emptyset" i
-\\emptyset $0
-endsnippet
-
 priority 3
 # -------------------- del
 snippet del "del" i
 \\partial $0
-endsnippet
-
-priority 7
-# -------------------- partial
-snippet partial "partial" i
-\\partial $0
-endsnippet
-
-priority 5
-# -------------------- infty
-snippet infty "infty" i
-\\infty $0
-endsnippet
-
-priority 5
-# -------------------- toinfty
-snippet toinf "toinf" i
-\\to\\infty $0
 endsnippet
 
 # ---------------------------------------
@@ -1291,12 +1118,6 @@ endsnippet
 # Text formatting
 # ---------------------------------------
 
-priority 4
-# -------------------- text
-snippet text "\text" i
-\\text{$1}$0
-endsnippet
-
 priority 2
 # -------------------- text
 snippet tt "\text" i
@@ -1311,19 +1132,19 @@ endsnippet
 
 priority 3
 # -------------------- bfm
-snippet bfm "\mathbf" i
+snippet mbf "\mathbf" i
 \\mathbf{$1}$0
 endsnippet
 
 priority 3
 # -------------------- bbm
-snippet bbm "\mathbb" i
+snippet mbb "\mathbb" i
 \\mathbb{$1}$0
 endsnippet
 
 priority 4
 # -------------------- calm
-snippet calm "\mathcal" i
+snippet mcal "\mathcal" i
 \\mathcal{$1}$0
 endsnippet
 
@@ -1331,12 +1152,6 @@ priority 2
 # -------------------- it
 snippet it "\italics" i
 \\textit{$1}$0
-endsnippet
-
-priority 7
-# -------------------- enquote
-snippet enquote "enquote" i
-\\enquote{$1}$0
 endsnippet
 
 priority 3
@@ -1354,12 +1169,6 @@ endsnippet
 priority 4
 # -------------------- phan
 snippet phan "phantom" i
-\\phantom{$1}$0
-endsnippet
-
-priority 7
-# -------------------- phantom
-snippet phantom "phantom" i
 \\phantom{$1}$0
 endsnippet
 
@@ -1417,11 +1226,3 @@ snippet url "\url" i
 \\url{$1}$0
 endsnippet
 
-priority 4
-# -------------------- sqlt
-snippet sqlt "CREATE TABLE" bA
-CREATE TABLE $1 (
-	$2
-)
-$0
-endsnippet
