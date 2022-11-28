@@ -325,8 +325,9 @@ endsnippet
 priority 4
 # -------------------- tfor
 snippet tfor "foreach" b
-\\foreach \\$1 in {$2,...,$3}
+\\foreach \\$1 in {$2,...,$3} {
 	$0
+}
 endsnippet
 
 priority 5
@@ -357,6 +358,10 @@ priority 5
 # -------------------- tikzdraw
 snippet Tdraw "Tdraw" b
 \\draw[$1] $2;$0
+endsnippet
+
+snippet tcoord "tcoord" b
+\\coordinate ($1) at ($2);$0
 endsnippet
 
 priority 5
@@ -980,12 +985,6 @@ priority 6
 # -------------------- angles
 snippet angles "langle and rangle" i
 \\langle $1 \\rangle $0
-endsnippet
-
-priority 2
-# -------------------- in
-snippet in "\in" i
-\\in $0
 endsnippet
 
 priority 2
