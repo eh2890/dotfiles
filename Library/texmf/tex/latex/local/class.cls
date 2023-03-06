@@ -51,9 +51,7 @@
 \usetikzlibrary{circuits}
 \usetikzlibrary{automata, chains}
 \usetikzlibrary{calc}
-\tikzset{>=stealth, node distance=3cm,every state/.style={thick, fill=gray!10}, initial text=$ $,in place/.style={auto=false, fill=white, inner sep=2pt,},} 
-\tikzset{Dff/.style={flipflop, flipflop def = {t2=D, t6=Q, t4={\ctikztextnot{Q}}, cu = 1}}}
-\tikzset{mux 4by2/.style={muxdemux, muxdemux def={Lh=4, NL=4, Rh=3, NB=1, w=2.5, square pins=1}}}
+\tikzset{>={Stealth[scale=1.25]}, node distance=3cm,every state/.style={thick, fill=gray!10}, initial text=$ $,in place/.style={auto=false, fill=white, inner sep=2pt,},} 
 \tikzset{in place/.style={auto=false, fill=white, inner sep=2pt}}
 
 \usetikzlibrary{fit}
@@ -111,49 +109,23 @@
 \DeclareSIUnit{\atm}{atm}
 \DeclareSIUnit{\calorie}{cal}
 \DeclareSIUnit{\molal}{m}
-
-
-% Listings settings
-\definecolor{dkgreen}{rgb}{0,0.6,0}
-\definecolor{gray}{rgb}{0.5,0.5,0.5}
-\definecolor{mauve}{rgb}{0.58,0,0.82}
+\DeclareSIUnit{\b}{b}
+\DeclareSIUnit{\B}{B}
 
 
 \lstset{frame=tb,
   aboveskip=3mm,
   belowskip=3mm,
   showstringspaces=false,
+  frame=single,
   columns=flexible,
   basicstyle={\small\ttfamily},
   numbers=left,
   numberstyle=\tiny\color{purple},
   keywordstyle=\color{blue},
-  commentstyle=\color{red},
+  commentstyle=\color{gray},
   stringstyle=\color{purple},
   breaklines=true,
   breakatwhitespace=true,
   tabsize=4,
 }
-
-
-% Theorem settings
-\theoremstyle{definition}
-\renewcommand\qedsymbol{$\blacksquare$}
-
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem*{theorem*}{Theorem}
-
-\newtheorem{corollary}{Corollary}[theorem]
-\newtheorem*{corollary*}{Corollary}
-
-\newtheorem{lemma}{Lemma}[theorem]
-\newtheorem*{lemma*}{Lemma}
-
-\newtheorem{definition}{Definition}[section]
-\newtheorem*{definition*}{Definition}
-
-\newtheorem{claim}{Claim}[section]
-\newtheorem*{claim*}{Claim}
-
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}

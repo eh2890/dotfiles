@@ -84,7 +84,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 gpp() {
-    g++ -std=c++11 -O2 -Wall $1 -o out
+    g++ -std=c++20 -O2 -Wall $1 -o out
 }
 
 # enable programmable completion features (you don't need to enable
