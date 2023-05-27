@@ -76,3 +76,32 @@ snippet lmi "list map input" A
 list(map(int, input().split()))
 $0
 endsnippet
+
+snippet dsu "disjoint set union" b
+class DSU:
+	def __init__(self, li):
+		self.n = len(li)
+		self.root = {x: x for x in li}
+		self.rank = {x: 1 for x in li}
+
+	def find(self, x):
+		if x == self.root[x]:
+			return x
+		self.root[x] = self.find(self.root[x])
+		return self.root[x]
+
+	def union(self, x, y):
+		rx = self.find(x)
+		ry = self.find(y)
+		if rx != ry:
+			if self.rank[rx] < self.rank[ry]:
+				self.root[rx] = ry
+			elif self.rank[rx] > self.rank[ry]:
+				self.root[ry] = rx
+			else:
+				self.root[rx] = ry
+				self.rank[ry] += 1
+
+	def connected(self, x, y):
+		return self.find(x) == self.find(y)
+endsnippet

@@ -71,6 +71,18 @@ snippet Subsec "\subsection*" bA
 \\subsection*{$1}$0
 endsnippet
 
+priority 4
+# -------------------- ssec
+snippet ssec "\subsection" bA
+\\subsection{$1}$0
+endsnippet
+
+priority 4
+# -------------------- ssec*
+snippet Ssec "\subsection*" bA
+\\subsection*{$1}$0
+endsnippet
+
 priority 9
 # -------------------- subsubsec
 snippet subsubsec "\subsubsection" bA
@@ -80,6 +92,18 @@ endsnippet
 priority 9
 # -------------------- subsubsec*
 snippet Subsubsec "\subsubsection*" bA
+\\subsubsection*{$1}$0
+endsnippet
+
+priority 5
+# -------------------- sssec
+snippet sssec "\subsubsection" bA
+\\subsubsection{$1}$0
+endsnippet
+
+priority 5
+# -------------------- sssec*
+snippet Sssec "\subsubsection*" bA
 \\subsubsection*{$1}$0
 endsnippet
 
@@ -101,16 +125,16 @@ priority 5
 # -------------------- frame
 snippet frame "frame" bA
 \\begin{frame}{\\secname: \\subsecname}
-	$1
-\\end{frame}$0
+	$0
+\\end{frame}
 endsnippet
 
 priority 5
 # -------------------- Frame
 snippet Frame "Frame" bA
 \\begin{frame}{$1}
-	$2
-\\end{frame}$0
+	$0
+\\end{frame}
 endsnippet
 
 priority 6
@@ -205,9 +229,14 @@ snippet table "table" bA
 \\begin{figure}[H]
 	\\centering
 	\\begin{tabular}{$1}$2
-		$3
+		$0
 	\\end{tabular}
-\\end{figure}$0
+\\end{figure}
+endsnippet
+
+priority 5
+snippet table "table" i
+\begin{tabular}{@{}c@{}} $1 \end{tabular}$0
 endsnippet
 
 priority 5
@@ -216,11 +245,11 @@ snippet Table "Table" bA
 \\begin{figure}[H]
 	\\centering
 	\\begin{tabular}{$1}$2
-		$3
+		$0
 	\\end{tabular}
-	\\caption{$4}
-	\\label{fig:$5}
-\\end{figure}$0
+	\\caption{$3}
+	\\label{fig:$4}
+\\end{figure}
 endsnippet
 
 priority 5
@@ -272,10 +301,6 @@ snippet addplot "addplot" bA
 	color=red,
 ]
 {$2};$0
-endsnippet
-
-snippet hline "hline" i
-\\hline $0
 endsnippet
 
 priority 4
@@ -1061,24 +1086,24 @@ priority 4
 # -------------------- itemize
 snippet item "itemize" bA
 \\begin{itemize}
-	\\item $1
-\\end{itemize}$0
+	\\item $0
+\\end{itemize}
 endsnippet
 
 priority 4
 # -------------------- enumerate
 snippet enum "enumerate" bA
 \\begin{enumerate}
-	\\item $1
-\\end{enumerate}$0
+	\\item $0
+\\end{enumerate}
 endsnippet
 
 priority 4
 # -------------------- enumerate
 snippet Enum "enumerate" bA
 \\begin{enumerate}[$1]
-	\\item $2
-\\end{enumerate}$0
+	\\item $0
+\\end{enumerate}
 endsnippet
 
 priority 8
