@@ -64,16 +64,10 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias icloud='cd ~/icloud'
-alias skim='open -a Skim.app'
-alias preview='open -a Preview'
 alias resumes='cd ~/resumes'
 alias lc='cd ~/Leetcode'
 alias cf='cd ~/icloud/CP/CodeForces/problems/'
 alias study='cd ~/icloud/Study/'
-alias todo='cd /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/To_Do_List && vim To_Do_List.tex && ./export.sh && cd - &> /dev/null'
-
-alias sipser='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/Textbooks/CS/Sipser.pdf'
-alias clrs='preview /Users/eumin/Library/Mobile\ Documents/com~apple~CloudDocs/Textbooks/CS/CLRS.pdf'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -85,7 +79,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 gpp() {
-    g++ -std=c++20 -O2 -Wall $1 -o out
+    g++ -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -std=c++20 -O2 -Wall ${@:1} -o out
 }
 
 # enable programmable completion features (you don't need to enable
