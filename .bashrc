@@ -67,7 +67,7 @@ alias icloud='cd ~/icloud'
 alias resumes='cd ~/resumes'
 alias lc='cd ~/Leetcode'
 alias cf='cd ~/icloud/CP/CodeForces/problems/'
-alias study='cd ~/icloud/Study/'
+alias study='cd ~/icloud/study/'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
