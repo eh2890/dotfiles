@@ -63,11 +63,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias icloud='cd ~/icloud'
-alias resumes='cd ~/resumes'
-alias lc='cd ~/Leetcode'
-alias cf='cd ~/icloud/CP/CodeForces/problems/'
-alias study='cd ~/icloud/study/'
+alias g++='g++-14 -std=c++20 -O2'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -79,7 +75,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 gpp() {
-    g++ -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -std=c++20 -O2 -Wall ${@:1} -o out
+    g++ -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -std=c++20 -O2 ${@:1} -o out
 }
 
 # enable programmable completion features (you don't need to enable
@@ -92,7 +88,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-export PATH=/opt/homebrew/bin:$PATH
 
 umask 077

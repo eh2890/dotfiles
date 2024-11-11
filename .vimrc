@@ -77,7 +77,7 @@ Plug 'sainnhe/everforest'
 
 " markdown-preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
-let g:mkdp_auto_start = 1
+let g:mkdp_auto_start = 0
 let g:mkdp_refresh_slow = 1
 
 call plug#end()             " Initialize plugin system
