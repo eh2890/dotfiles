@@ -39,7 +39,7 @@ unset color_prompt force_color_prompt
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\e[1m\e[38;5;107m[\w]\e[0m $ \e[0m"
+    PS1="\[\e[1m\e[38;5;107m\][\w]\[\e[0m\] $ \[\e[0m\]"
     ;;
 *)
     ;;
@@ -64,6 +64,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias g++='g++-14 -std=c++20 -O2'
+alias dc='docker-compose'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
