@@ -91,3 +91,4 @@ if ! shopt -oq posix; then
 fi
 
 umask 077
+. "$HOME/.cargo/env"

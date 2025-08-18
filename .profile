@@ -27,3 +27,4 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
+. "$HOME/.cargo/env"

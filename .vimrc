@@ -80,6 +80,11 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' 
 let g:mkdp_auto_start = 0
 let g:mkdp_refresh_slow = 1
 
+Plug 'preservim/vim-markdown'
+let g:tex_conceal = ""
+let g:vim_markdown_math = 1
+
+
 call plug#end()             " Initialize plugin system
 
 
@@ -104,30 +109,6 @@ colorscheme everforest
 " --------------------
 set hidden " Allow buffers to be hidden if you've modified a buffer
 
-" Move to the previous buffer
-" option + n
-nmap ˜ :bprevious<CR>
-
-" Move to the next buffer
-" option + m
-nmap µ :bnext<CR>
-
-" Close the current buffer and move to the previous one
-" This replicates the idea of closing a tab
-" option + q
-nmap œ :bp <BAR> bd #<CR>
-
-" Show all open buffers and their status
-" option + b
-nmap ∫ :ls<CR>
-
-" Use arrow keys to navigate window splits
-" option + h|j|k|l
-nnoremap ˙ :wincmd h <CR>
-nnoremap ∆ :wincmd j <CR>
-nnoremap ˚ :wincmd k <CR>
-nnoremap ¬ :wincmd l <CR>
-
 
 " --------------------
 " Spaces and Tabs
@@ -141,6 +122,10 @@ set shiftwidth=4            " indent is a single tab (4 spaces)
 autocmd FileType make setlocal noexpandtab
                             " no tab replacement in Makefiles
 set autoindent              " auto-indenting
+
+let g:pyindent_open_paren = '&sw'
+let g:pyindent_nested_paren = '&sw'
+let g:pyindent_continue = '&sw'
 
 
 " --------------------
@@ -187,3 +172,7 @@ set backupdir^=~/.vim/.backup//
 set dir^=~/.vim/.backup//
 set undodir^=~/.vim/.backup//
 let g:python3_host_prog = "/usr/bin/python3"
+
+
+" Disable emphasis in markdown
+autocmd VimEnter * highlight markdownItalic cterm=NONE gui=NONE

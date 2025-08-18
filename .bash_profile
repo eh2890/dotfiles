@@ -4,3 +4,4 @@ fi
 [[ -f ~/.bashrc ]] && source ~/.bashrc # ghcup-env
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+. "$HOME/.cargo/env"
