@@ -59,9 +59,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='ls -alF --color=auto'
+alias la='ls -A --color=auto'
+alias l='ls -CF --color=auto'
 
 alias g++='g++-14 -std=c++20 -O2'
 alias dc='docker-compose'

@@ -139,6 +139,7 @@ set wrap linebreak nolist   " wrap text
 set textwidth=0
 set scrolloff=0
 set mouse=
+set splitbelow              " start :sp and :vsp below
 
 
 " --------------------

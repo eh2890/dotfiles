@@ -1,0 +1,35 @@
+parse_git_branch() {
+    git branch 2> /dev/null | sed -n 's/\* \(.*\)/(\1)/p'
+}
+
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\n\$(parse_git_branch)\n\[\e[1m\e[38;5;107m\][\w]\[\e[0m\] $ \[\e[0m\]"
+    ;;
+*)
+    ;;
+esac
+
+
+
+repo_branches () {
+    repos=(
+        "/path/to/repo"
+    )
+    printf "%-20s %s\n" "REPOSITORY" "BRANCH"
+    printf "%-20s %s\n" "----------" "------"
+
+    for path in "${repos[@]}"; do
+        name=$(basename "$path")
+
+        if [ -d "$path/.git" ]; then
+            branch=$(git -C "$path" branch --show-current 2>/dev/null | tr -d '\n')
+            [ -z "$branch" ] && branch="detached/error"
+        else
+            branch="not a git repo"
+        fi
+        printf "%-20s %s\n" "$name" "$branch"
+    done
+}
+
+alias repo='repo_branches'
