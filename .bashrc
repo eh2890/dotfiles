@@ -59,12 +59,14 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
-alias ll='ls -alF --color=auto'
-alias la='ls -A --color=auto'
-alias l='ls -CF --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 
 alias g++='g++-14 -std=c++20 -O2'
 alias dc='docker-compose'
+
+alias todo='vim ~/todo.md'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -92,3 +94,4 @@ fi
 
 umask 077
 . "$HOME/.cargo/env"
+export PATH="$HOME/.local/bin:$PATH"
